@@ -1,0 +1,71 @@
+footer {
+    padding: 80px 0 20px;
+    background: #2370aa;
+
+    .footer_top {
+
+
+        .wrap {
+            border-bottom: 1px solid #74a6cc;
+            padding-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h4 {
+                font-size: 28px;
+                color: #fff;
+                font-family: "Proxima Nova Th";
+                text-transform: uppercase;
+                font-weight: 100;
+            }
+
+            .social_icon {
+                a {
+                    color: #fff;
+                    margin: 0 15px;
+                    font-size: 22px;
+
+                    svg {
+                        path {
+                            stroke-width: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_bottom {
+        padding: 30px 0px 10px;
+
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-size: 16px;
+                color: #fff;
+            }
+
+            svg {
+                width: 45px;
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+
+        .copyright {
+            color: #fff;
+            font-size: 16px;
+        }
+
+    }
+
+}

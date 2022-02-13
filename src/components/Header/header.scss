@@ -1,0 +1,53 @@
+header {
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 999;
+
+
+    .logo {
+        svg {
+            height: 75px;
+            width: 95px;
+        
+        }
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            ul {
+                display: flex;
+
+                li {
+                    margin: 0 25px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) { 
+    header {
+        nav {
+            display: none;
+        }
+    }
+
+}
