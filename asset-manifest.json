@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/recycler_saathi/static/css/main.4e3388ee.css",
+    "main.js": "/recycler_saathi/static/js/main.ce295878.js",
+    "index.html": "/recycler_saathi/index.html",
+    "main.4e3388ee.css.map": "/recycler_saathi/static/css/main.4e3388ee.css.map",
+    "main.ce295878.js.map": "/recycler_saathi/static/js/main.ce295878.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e3388ee.css",
+    "static/js/main.ce295878.js"
+  ]
+}
