@@ -9,6 +9,20 @@ const Footer = () => {
   return (
     <>
         <footer>
+            <div className="suscribe">
+                <div className="container">
+                    <div className="wrap">
+                        <h3>Become a <strong>Saathi</strong></h3>
+                        <p>Join us to stay up-to-date on insights, events and new solutions. You can unsuscribe anytime.</p>
+
+                        <div className="btn">
+                            <input type="text" placeholder='Your Email Address' />
+                            <button>Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="footer_top">
                 <div className="container">
                     <div className="wrap">

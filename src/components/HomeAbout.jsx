@@ -34,7 +34,7 @@ const HomeAbout = () => {
             <div className="wrap">
               <div className="textcard">
                 <div className="text">
-                  <h3>We research and develop the interventions to<strong> tackle the Waste problem in Nepal</strong> </h3>
+                  <h3><strong>We research and develop the interventions</strong> to tackle the Waste problem in Nepal </h3>
                   <p>
                     With Nepal being a developing country and urbanizing fast, the changing scenario of waste composition is a major issue for the management of Municipal Solid Waste (MSW). A recent study conducted shows plastic to account for 15% of all waste generated in Nepal in 2020.  
                   </p>

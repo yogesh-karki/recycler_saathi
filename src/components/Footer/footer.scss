@@ -1,19 +1,74 @@
 footer {
     padding: 80px 0 20px;
-    background: #2370aa;
+    background: #003755;
+
+    .suscribe {
+        color: #fff;
+        text-align: center;
+        padding-bottom: 80px;
+
+        h3 {
+            font-family: "Proxima Nova Th";
+            text-transform: uppercase;
+            color: #10b5c9;
+            margin-bottom: 20px;
+        }
+
+        p {    
+            max-width: 330px;
+            margin: auto;
+            font-family: "Proxima Nova Th";
+            line-height: 1.4;
+            margin-bottom: 30px;
+
+        }
+
+        .btn {
+            width: 60%;
+            margin: auto;
+            display: flex;
+
+            input {
+                width: 80%;
+                height: 48px;
+                border: 0;
+                padding: 0 10px;
+                font-family: "Proxima Nova Th";
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                background: #10b5c9;
+                border: 0;
+                display: inline-flex;
+                height: 48px;
+                width: 110px;
+                font-family: "Proxima Nova Rg";
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
 
     .footer_top {
 
 
         .wrap {
-            border-bottom: 1px solid #74a6cc;
-            padding-bottom: 40px;
+            border-top: 1px solid #0d4564;
+            border-bottom: 1px solid #0d4564;
+            padding: 30px 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             h4 {
-                font-size: 28px;
+                font-size: 24px;
                 color: #fff;
                 font-family: "Proxima Nova Th";
                 text-transform: uppercase;
@@ -25,6 +80,10 @@ footer {
                     color: #fff;
                     margin: 0 15px;
                     font-size: 22px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
 
                     svg {
                         path {
@@ -51,6 +110,8 @@ footer {
             p {
                 font-size: 16px;
                 color: #fff;
+                font-family: "Proxima Nova Th";
+                font-weight: 100;
             }
 
             svg {
@@ -64,6 +125,8 @@ footer {
         .copyright {
             color: #fff;
             font-size: 16px;
+            font-family: "Proxima Nova Th";
+                font-weight: 100;
         }
 
     }

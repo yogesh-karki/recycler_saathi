@@ -26,17 +26,17 @@ const data = [
 
 const Objective = () => {
     useEffect(()=> {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.objectives',
-                start: 'top center',
-                toggleActions: 'play reset restart reverse',
-            }
-        })
+        // const tl = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: '.objectives',
+        //         start: 'top center',
+        //         toggleActions: 'play reset restart reverse',
+        //     }
+        // })
 
-        tl
-            .to('.objectives',{background: '#002846'})
-            .to('.impacts', {background: '#002846'}, '<');
+        // tl
+        //     .to('.objectives',{background: '#002846'})
+        //     .to('.impacts', {background: '#002846'}, '<');
 
 
         gsap.from('.full_image img',{
@@ -49,15 +49,14 @@ const Objective = () => {
             scrollTrigger : {
                 trigger: '.full_image img',
                 start: 'top center',
-                toggleActions: 'play reset restart reverse',
             }
         })
     })
 
   return (
-    <section className="objectives" style={{backgroundColor: '#22352b'}}>
+    <section className="objectives" >
         <div className="objective_head">
-            <h3><strong>Our Objectives</strong> </h3>
+            <h3>Our<strong> Objectives</strong> </h3>
             <p>Annually, 15000 tons of waste pet bottles are produced in Nepal out of which only 12000 tons of waste pet bottles are recollected and 10000 tons of them are exported illegally.</p>
         </div>
 

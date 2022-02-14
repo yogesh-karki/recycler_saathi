@@ -31,8 +31,6 @@ function App() {
 
       <Objective />
 
-      {/* <Nepal /> */}
-
       <Footer />
     </>
   );

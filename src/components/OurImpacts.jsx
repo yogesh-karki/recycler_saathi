@@ -1,6 +1,11 @@
 import React,{useEffect} from 'react'
+
+import NepalMap from './NepalMap' ;
+
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+
+
 
 gsap.registerPlugin(ScrollTrigger); 
 
@@ -68,38 +73,47 @@ const OurImpacts = () => {
       ]
     
     useEffect(()=> {
-
-      gsap.to('.impact_bg',{
-        y: -30,
-        duration: 5,
-        scale: 1.2,
-        repeat: -1,
-        yoyo: true,
-        ease: "none"
+      ScrollTrigger.create({
+        trigger: '.impacts',
+        start: 'top top+=10%',
+        pin: '.map_bg',
+        end: 'bottom top',
+        duration: 0.8
+   
       })
 
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.impacts',
-                start: 'top center',
-                toggleActions: 'play reset restart reverse',
-            }
-        })
+      gsap.to('.map_bg', {
+        opacity: 1,
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: '.impacts',
+          start: 'top top+=10%',
+          toggleActions: 'play reset restart reverse',
+          end: 'bottom center',
+        
+        }
+      })
 
-        tl
-            .fromTo('.impacts',{background: '#223335'},{background: '#22352b'})
-            .to('.abt', {background: '#22352b'}, '<');
+      gsap.to('.map_bg', {
+        y: -40,
+        scrollTrigger: {
+          trigger: '.impacts',
+          start: 'center+=20% center-=5%',
+          scrub: 2,
+        }
+      })
+
 
     })
 
     return (
         <section className="impacts">
-        
-
-            <div className="impact_bg"><img src="./images/impact.svg" alt="" /></div>
+            <div className="map_bg">
+              <NepalMap />
+            </div>
             <div className="container">
                 <div className="impact_head">
-                    <h3><strong>Our Impacts</strong></h3>
+                    <h3>Our <strong>Impacts</strong></h3>
                     <p>Recycler Saathi has an annual recollection and recycling capacity of 2400 Tons/Month which has helped the waste PET bottles in landfills, rivers and other areas.</p>
                 </div>
             </div>
@@ -116,7 +130,7 @@ const OurImpacts = () => {
                                 {/* {val.icon} */}
                             </div>
                         
-                            <h2 style={{ color: val.color }} >{val.numbers} <small>{val.unit}</small> </h2>
+                            <h2 >{val.numbers} <small>{val.unit}</small> </h2>
                             <p>{val.title}</p>
                         </div>
                         )
