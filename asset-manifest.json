@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/recycler_saathi/static/css/main.4e3388ee.css",
-    "main.js": "/recycler_saathi/static/js/main.ce295878.js",
+    "main.css": "/recycler_saathi/static/css/main.bb9d7d99.css",
+    "main.js": "/recycler_saathi/static/js/main.70a7be8e.js",
     "index.html": "/recycler_saathi/index.html",
-    "main.4e3388ee.css.map": "/recycler_saathi/static/css/main.4e3388ee.css.map",
-    "main.ce295878.js.map": "/recycler_saathi/static/js/main.ce295878.js.map"
+    "main.bb9d7d99.css.map": "/recycler_saathi/static/css/main.bb9d7d99.css.map",
+    "main.70a7be8e.js.map": "/recycler_saathi/static/js/main.70a7be8e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e3388ee.css",
-    "static/js/main.ce295878.js"
+    "static/css/main.bb9d7d99.css",
+    "static/js/main.70a7be8e.js"
   ]
 }
