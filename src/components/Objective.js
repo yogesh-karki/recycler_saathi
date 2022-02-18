@@ -26,31 +26,7 @@ const data = [
 
 const Objective = () => {
     useEffect(()=> {
-        // const tl = gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: '.objectives',
-        //         start: 'top center',
-        //         toggleActions: 'play reset restart reverse',
-        //     }
-        // })
-
-        // tl
-        //     .to('.objectives',{background: '#002846'})
-        //     .to('.impacts', {background: '#002846'}, '<');
-
-
-        gsap.from('.full_image img',{
-            duration: 2,
-    
-            webkitClipPath: 'inset(15% 15% 15% 15%)',
-            clipPath: 'inset(15% 15% 15% 15%)',
-            y: -50,
-
-            scrollTrigger : {
-                trigger: '.full_image img',
-                start: 'top center',
-            }
-        })
+        
     })
 
   return (
@@ -68,8 +44,7 @@ const Objective = () => {
                             <div className="card" key={index} style={{backgroundColor:val.color}} >
                                 <div className="content">
                                     <h1>0{index+1}</h1>
-                                    {/* <img src={val.img} alt="" /> */}
-                                    <object type="image/svg+xml" data={val.img} class="svg">0{index+1}</object>
+                                    <object type="image/svg+xml" data={val.img} className="svg">0{index+1}</object>
                                     <h2>{val.title} </h2>
 
                                     <a href="">Explore More</a>
@@ -82,17 +57,6 @@ const Objective = () => {
             </div>
         </div>
 
-        
-            <figure className='full_image'>
-                <img src="./images/A6.5.1.jpg" alt="" />
-
-                <div className="container">
-                    <figcaption>
-                    Participants of Hamro Cycle Yatra 2021
-                    </figcaption>
-                </div>
-            </figure>
-     
 
       </section>
   )

@@ -7,8 +7,6 @@ const Nepal = () => {
         <section className="nepal">
             <div className="container">
                 <NepalMap />
-
-               
             </div>
         </section>
     </>

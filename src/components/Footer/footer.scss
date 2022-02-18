@@ -33,7 +33,8 @@ footer {
                 height: 48px;
                 border: 0;
                 padding: 0 10px;
-                font-family: "Proxima Nova Th";
+                font-family: "Proxima Nova Rg";
+                color: #003755;
 
                 &:focus {
                     outline: none;
@@ -79,7 +80,8 @@ footer {
                 a {
                     color: #fff;
                     margin: 0 15px;
-                    font-size: 22px;
+                    font-size: 18px;
+                    opacity: 0.8;
 
                     &:last-child {
                         margin-right: 0;
