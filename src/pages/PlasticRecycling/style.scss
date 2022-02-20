@@ -28,6 +28,16 @@ $turquoise : #10b5c9;
             }
         }
     }
+
+    figure {
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        
+    }
 }
 
 .pl_desc {

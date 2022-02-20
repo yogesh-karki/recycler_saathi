@@ -61,6 +61,10 @@ const PlasticRecycling = () => {
                 <div className="text">
                     <h2>Plastic waste is <strong>not a waste, it’s a RESOURCE</strong> </h2>
                 </div>
+
+                <figure>
+                    <img src="./images/new_plastic_recovery.svg" alt="" />
+                </figure>
             </div>
         </section>
 
