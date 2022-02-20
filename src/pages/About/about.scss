@@ -17,8 +17,7 @@ $turquoise : #10b5c9;
         top: 50%;
         transform: translateY(-50%);
 
-        .earth{
-            transform: scale(0.9);
+        .leaf {
             animation: earthAnim infinite 6s;
         }
 

@@ -16,10 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const About = () => {
-  useEffect(() => {
 
-
-  })
 
   return (
     <>
