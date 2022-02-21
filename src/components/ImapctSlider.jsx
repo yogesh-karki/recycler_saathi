@@ -21,9 +21,9 @@ const ImapctSlider = () => {
 
     let sliderData = [
         {
-            number: 3.8,
-            unit: "barrels",
-            text: "Crude oil consumption is reduced",
+            number: 1,
+            unit: "tons",
+            text: "Waste PET bottles recycled",
             img: "./images/icons/bottles.svg",
         },
         {
@@ -42,7 +42,7 @@ const ImapctSlider = () => {
 
     useEffect(() => {
         const sliderBtn = document.querySelector('.slider_range .ant-slider-handle')
-        const sliderText = `ton of recycled of PET bottle`
+        const sliderText = `Ton of recycled of PET bottle`
         
 
         let p = document.createElement("p")

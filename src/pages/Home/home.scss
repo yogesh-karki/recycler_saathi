@@ -84,7 +84,12 @@
 
             p {
                 color: #fff;
-                width: 80%;
+                width: 95%;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -180,7 +185,7 @@
                 font-family: "Proxima Nova Lt";
 
                 small {
-                    font-size: 20px;
+                    font-size: 26px;
                     font-family: 'Proxima Nova Th';
                     margin-left: 16px;
                     line-height: 0;
@@ -189,7 +194,7 @@
 
             p {
                 font-size: 16px;
-                font-family: 'Proxima Nova Th';
+                font-family: 'Proxima Nova Rg';
                 color: #10b5c9;
             }
         }
@@ -398,6 +403,7 @@
                 margin-top: 20px;
                 font-size: 18px;
                 font-weight: 200;
+                font-family: "Proxima Nova Lt";
             }
 
             .num_flex {

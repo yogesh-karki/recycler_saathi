@@ -114,7 +114,7 @@ const OurImpacts = () => {
             <div className="container">
                 <div className="impact_head">
                     <h3>Our <strong>Impacts</strong></h3>
-                    <p>Recycler Saathi has an annual recollection and recycling capacity of 2400 Tons/Month which has helped the waste PET bottles in landfills, rivers and other areas.</p>
+                    <p>Recycler Saathi has an annual recollection and recycling capacity of 2400 Tons/Year which has helped the waste PET bottles in landfills, rivers and other areas.</p>
                 </div>
             </div>
 

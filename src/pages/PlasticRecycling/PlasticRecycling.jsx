@@ -2,69 +2,93 @@ import React,{useEffect} from 'react'
 import './style.scss'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from "swiper";
+import { EffectFade, Pagination } from "swiper";
+
 
 import 'swiper/css';
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 import gsap from "gsap";
+import PrBanner from './PrBanner';
 
 
+
+const stepData = [
+    {
+        title: 'Collection',
+        img: './images/collection.svg',
+        imgThumb: './images/collectionThumb.svg',
+        text: '<p> The network of local vendors, waste pickers, scrap dealers, and balers collects the PET bottle waste and transports it to the regional office in Bharatpur , Chitwan. This networking and partnership have helped strengthen recovery strategy, regulate a fair pricing system and secure a continuous supply of scrap PET bottles within the Recycler Saathi ecosystem. </p>'
+    },
+    {
+        title: 'Sorting of waste',
+        img: './images/sorting.svg',
+        imgThumb: './images/sortingThumb.svg',
+        text: '<p>The collected plastic waste is sorted and any plastics, other than PET, are removed. </p>'
+    },
+    {
+        title: 'Baling ',
+        img: './images/bailing.svg',
+        imgThumb: './images/bailingThumb.svg',
+        text: '<p>A baling machine is present on the site which bales the PET waste. Baling is an important process in recycling that compresses the plastic waste into a block (bale) which is secured by plastic or wire wrapping. It is fundamental as </p> <ul><li>It helps to reduce the volume of the plastic waste. </li> <li>It reduces transportation/waste disposal costs.  </li> <li>It facilitates turning waste into a revenue-generating product. </li> </ul> '
+    },
+    {
+        title: 'Transportation ',
+        img: './images/transport.svg',
+        imgThumb: './images/transportThumb.svg',
+        text: '<p> The collected and baled plastic waste are then transported to our partner facilities, where the plastics are cleaned and granulated. The granules are then used to make different plastic products.</p> <p>With this, Recycler Saathi, helps to divert the plastic waste from the landfills and contributes to the Zero Carbon vision of Nepal by 2030.  </p>'
+    }
+]
 const PlasticRecycling = () => {
+    const pagination = {
+        clickable: true,
+      
+    };
+    
     useEffect(() => {
-
+        
 
         const stepAnim = gsap.timeline()
-
         stepAnim
-            .from('.steps_slider figure img', {scale: 0.5,opacity: 0,y: 50})
-            .from('.steps_slider .text',{opacity: 0, scale: 0.9, y: 20})
+            .from('.steps_slider figure img', {delay:0.3, scale: 0.6,opacity: 0,y: 20, duration: 0.5})
+            .from('.steps_slider .text',{opacity: 0, scale: 0.9, y: 20});
+
+        const newpagination = document.querySelectorAll('.steps_slider span.swiper-pagination-bullet')
+
+
+
+        newpagination.forEach((page, i) => {
+            page.innerHTML = `
+                                <div class="page_wrap">
+
+                                        <label>${i+1} </label>
+                                        <h5>${stepData[i].title} </h5>
+                                </div>
+                            `;
+            page.addEventListener('click', () => {
+                console.log("click")
+                stepAnim.restart();
+            })
+        })
+        
     })
 
-      const stepData = [
-          {
-            img: './images/collection.svg',
-            text: '<p> The network of local vendors, waste pickers, scrap dealers, and balers collects the PET bottle waste and transports it to the regional office in Bharatpur , Chitwan. This networking and partnership have helped strengthen recovery strategy, regulate a fair pricing system and secure a continuous supply of scrap PET bottles within the Recycler Saathi ecosystem. </p>'
-          },
-          {
-              img: './images/sorting.svg',
-              text: '<p>The collected plastic waste is sorted and any plastics, other than PET, are removed. </p>'
-          },
-          {
-              img: './images/bailing.svg',
-              text: '<p>A baling machine is present on the site which bales the PET waste. Baling is an important process in recycling that compresses the plastic waste into a block (bale) which is secured by plastic or wire wrapping. It is fundamental as </p> <ul><li>It helps to reduce the volume of the plastic waste. </li> <li>It reduces transportation/waste disposal costs.  </li> <li>It facilitates turning waste into a revenue-generating product. </li> </ul> '
-          },
-          {
-              img: './images/transport.svg',
-              text: '<p> The collected and baled plastic waste are then transported to our partner facilities, where the plastics are cleaned and granulated. The granules are then used to make different plastic products.</p> <p>With this, Recycler Saathi, helps to divert the plastic waste from the landfills and contributes to the Zero Carbon vision of Nepal by 2030.  </p>'
-          }
-      ]
-
-      const pagination = {
-        clickable: true,
-        renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
-    
-        },
-  };
-
-  const changeSlider = () => {
-      console.log("changed")
-  }
-
       
+
+   
+
+
 
   return (
     <>
         <section className="pl_banner">
             <div className="container">
                 <div className="text">
-                    <h2>Plastic waste is <strong>not a waste, it’s a RESOURCE</strong> </h2>
+                    <h2>Plastic waste is <strong>not a waste, it’s a resource</strong> </h2>
                 </div>
 
-                <figure>
-                    <img src="./images/new_plastic_recovery.svg" alt="" />
-                </figure>
+                <PrBanner />
             </div>
         </section>
 
@@ -96,7 +120,7 @@ const PlasticRecycling = () => {
                     className="steps_slider"
                     pagination={pagination}
                     modules={[Pagination]}
-                    onChange= {()=> console.log("change")}
+                    
                 >
                 
                     {

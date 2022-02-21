@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const About = () => {
-
+  
 
   return (
     <>
@@ -30,11 +30,9 @@ const About = () => {
             </div>
         </section>
 
-        <Objective />
-
-        {/* <section className="impact_slider">
-          <ImapctSlider />
-        </section> */}
+        <div className="abt_objective">
+          <Objective />
+        </div>
 
         <Programs />
     </>

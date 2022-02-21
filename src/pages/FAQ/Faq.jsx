@@ -16,7 +16,7 @@ const faqData = [
     },
     {
         question: 'How does Recycler Saathi help the environment? ',
-        answer: '<p>Recycling just one ton of PET bottle waste can save up to 7.4 cubic yards of landfill space, 3.8 barrels of crude oil, and 48 million BTUs of energy. Producing one ton of clean recycled PET in place of virgin PET can reduce the carbon emission by 1.5 tons. </p> <p> Since our inception, we have recollected 3004 tons of waste PET bottles and sent them for recycling. This implies that we have diverted 3004 tons of PET bottles going to landfills and reduced carbon emissions by 4506 tons. This is how we have become an ally of the environment and helped divert the waste from entering the ecosystem and parallelly reducing carbon emission in the environment.    </p>'
+        answer: '<p>Recycling just one ton of PET bottle waste can save up to 7.4 cubic yards of landfill space. Producing one ton of clean recycled PET in place of virgin PET can reduce the carbon emission by 1.5 tons. </p> <p> Since our inception, we have recollected 3004 tons of waste PET bottles and sent them for recycling. This implies that we have diverted 3004 tons of PET bottles going to landfills and reduced carbon emissions by 4506 tons. This is how we have become an ally of the environment and helped divert the waste from entering the ecosystem and parallelly reducing carbon emission in the environment.    </p>'
     },
     {
         question: 'Are there other activities Recycler Saathi has ventured into?',
@@ -45,7 +45,7 @@ export const Faq = () => {
         <section className="faq_banner">
             <div className="container">
                 <div className="text">
-                    <h2>FAQs</h2>
+                    <h2><strong>FAQs</strong> </h2>
                 </div>
             </div>
         </section>

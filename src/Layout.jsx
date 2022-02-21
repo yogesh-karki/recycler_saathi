@@ -9,12 +9,13 @@ import PlasticRecycling from './pages/PlasticRecycling/PlasticRecycling';
 import { Faq } from './pages/FAQ/Faq';
 
 const Layout = () => {
+
   return (
     <>
         <Header />
           <Routes>
             <Route path='/' element={<Home  />} />
-            <Route path='/about' element={<About />} />
+            <Route path='/about' element={<About  />} />
             <Route path='/plastic_recycling' element={<PlasticRecycling/> } />
             <Route path='/faq' element={<Faq/> } />
           </Routes>

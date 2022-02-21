@@ -46,6 +46,8 @@ header {
         }
         
         nav {
+            margin-left: -80px;
+
             ul {
                 display: flex;
 
@@ -70,6 +72,34 @@ header {
 
 a.active  {
     color: #10b5c9 !important;
+}
+
+@media screen and (max-width: 1400px) {
+    header .wrap {
+        padding: 0 10px;
+
+        nav {
+            ul {
+                li {
+                    margin: 0 18px;
+                }
+            }
+        }
+
+        .btn {
+            a {
+                padding-right: 35px;
+            }
+
+            &::after {
+                width: 170px;
+            }
+        }
+    }
+
+    .banner .text h1 {
+        line-height: 1.1;
+    }
 }
 
 @media screen and (max-width: 480px) { 
