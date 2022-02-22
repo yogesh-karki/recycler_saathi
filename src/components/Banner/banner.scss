@@ -1,0 +1,54 @@
+.inner_banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &.light {
+        background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+    }
+
+    &.dark {
+        background-color: #01283c;
+    }
+
+    &.smallHeight {
+        height: 350px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .text {
+        width: 610px;
+        max-width: 100%;
+
+
+        h2 {
+            color: #10b5c9;
+            font-size: 62px;
+            line-height: 1.1;
+            font-family: 'Proxima Nova Th';
+
+            strong {
+                font-family: 'Proxima Nova Lt';
+            }
+        }
+    }
+
+    .figure {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        img {
+            position: absolute;
+        }
+    }
+}

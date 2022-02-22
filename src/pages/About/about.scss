@@ -10,28 +10,7 @@ $turquoise : #10b5c9;
     background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
     
 
-    .abt_banner_svg {
-        
-        position: absolute;
-        width: 500px;
-        height: 500px;
-        right: 5%;
-        top: 50%;
-        transform: translateY(-50%);
 
-        .leaf {
-            animation: earthAnim infinite 6s;
-        }
-
-        .water{
-            animation: waterAnim infinite 4s;
-        }
-
-
-        img {
-            position: absolute;
-        }
-    }
 
     .container {
         width: 100%;
@@ -188,22 +167,3 @@ $turquoise : #10b5c9;
     }
 }
 
-@keyframes earthAnim {
-    0% { opacity: 1; margin-left: -28px; margin-top: -10px; }
-  
-    30% { margin-left: -18px; margin-top: 0px; }
-
-    60% { margin-left: 8px; margin-top: 10px;}
-  
-    100% { margin-left: -18px; margin-top: 0px; }
-}
-
-@keyframes waterAnim {
-    0% { margin-right: 7px; margin-top: 0px; }
-  
-    30% { margin-right: 15px; margin-top: 15px; }
-
-    60% { margin-right: 10px; margin-top: 30px;}
-  
-    100% { margin-right: 12px; margin-top: 15px; }
-}

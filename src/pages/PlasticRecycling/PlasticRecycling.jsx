@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 import './style.scss'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Pagination } from "swiper";
+import {  Pagination } from "swiper";
 
 
 import 'swiper/css';
@@ -11,6 +11,7 @@ import "swiper/css/effect-fade";
 
 import gsap from "gsap";
 import PrBanner from './PrBanner';
+import Banner from '../../components/Banner/Banner';
 
 
 
@@ -82,15 +83,16 @@ const PlasticRecycling = () => {
 
   return (
     <>
-        <section className="pl_banner">
-            <div className="container">
-                <div className="text">
-                    <h2>Plastic waste is <strong>not a waste, it’s a resource</strong> </h2>
-                </div>
+        
+        <div className="pl_banner">
+            <Banner 
+            colorTheme={'dark'}
+            title={'<h2>Plastic waste is <strong>not a waste, it’s a resource</strong> </h2>'}
+            figure={<PrBanner />}
+            />
+        </div>
 
-                <PrBanner />
-            </div>
-        </section>
+
 
         <section className="pl_desc">
             <div className="container">

@@ -4,6 +4,7 @@ import 'antd/dist/antd.css';
 import './faq.scss'
 
 import { Collapse } from 'antd';
+import Banner from '../../components/Banner/Banner';
 
 const { Panel } = Collapse;
 
@@ -42,13 +43,13 @@ const faqData = [
 export const Faq = () => {
   return (
     <>
-        <section className="faq_banner">
-            <div className="container">
-                <div className="text">
-                    <h2><strong>FAQs</strong> </h2>
-                </div>
-            </div>
-        </section>
+        <Banner 
+            colorTheme={'light'}
+            height={"smallHeight"}
+            title={'<h2><strong>FAQs</strong> </h2>'}
+         
+        />
+
 
         <section className="faq">
             <div className="container">
