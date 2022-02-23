@@ -34,6 +34,11 @@ const teamData = [
         img: 'images/team/Thinley Doma Ghale.jpg',
         post: 'Program Development & Communication Intern'
     },
+    {
+        name: 'Sushila Shrestha',
+        img: 'images/team/Sushila Shrestha.jpg',
+        post: 'Program Intern'
+    },
 
 
 ]
