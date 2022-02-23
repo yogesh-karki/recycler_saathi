@@ -7,6 +7,9 @@ header {
     position: relative;
     z-index: 99;
 
+    .portal_btn {
+        color: #fff !important;
+    }
 
     .logo {
         svg {
@@ -72,8 +75,14 @@ header {
     }
 }
 
-a.active  {
-    color: #10b5c9 !important;
+a {
+    &.active  {
+        color: #10b5c9 !important;
+
+        &.portal_btn {
+            color: #fff !important;
+        }
+    }
 }
 
 @media screen and (max-width: 1400px) {

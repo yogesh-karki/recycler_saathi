@@ -1,31 +1,12 @@
 import React from 'react'
+import {  NavLink } from 'react-router-dom';
 
 import './news.scss'
 
 import Banner from '../../components/Banner/Banner';
+import NewsData from './NewsData';
 
-const newsData = [
-    {
-        title: 'Occupational Safety Training and Health Campaign in Pepsicola',
-        img: './images/news1.jpg',
-        date: '02/22/2022'
-    },
-    {
-        title: 'How green are you? 2022',
-        img: './images/news2.jpg',
-        date: '02/19/2022'
-    },
-    {
-        title: 'Reducing 60,583 kg of carbon emissions',
-        img: './images/news3.jpg',
-        date: '02/18/2022'
-    },
-    {
-        title: 'Waste Smart School, Starting them young',
-        img: './images/news4.jpg',
-        date: '02/15/2022'
-    },
-]
+const data = NewsData
 
 export const News = () => {
 
@@ -43,10 +24,13 @@ export const News = () => {
             <div className="container">
                 <div className="wrap">
                     {
-                        newsData.map((val,index) => {
+                        data.map((val,index) => {
                             return(
                                 <div className="news_card" key={index}>
-                                    <address className="news_wrap">
+                                    <NavLink className="news_wrap" 
+                                        to="/newsDetail"
+                                        state={{ detail: val }}
+                                    >
                                         <figure>
                                             <img src={val.img} alt="" />
                                         </figure>
@@ -55,7 +39,7 @@ export const News = () => {
                                             <h4>{val.title}</h4>
                                             <h5>{val.date}</h5>
                                         </div>
-                                    </address>
+                                    </NavLink>
                                 </div>
                             )
                         })

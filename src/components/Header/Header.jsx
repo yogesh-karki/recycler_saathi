@@ -30,7 +30,7 @@ const Header = () => {
             </nav>
 
             <div className="btn">
-              <a href="">Portal</a>
+              <NavLink to='/portal' className='portal_btn'>Portal</NavLink>
             </div>
           </div>
      

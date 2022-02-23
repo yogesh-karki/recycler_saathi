@@ -9,6 +9,8 @@ import PlasticRecycling from './pages/PlasticRecycling/PlasticRecycling';
 import { Faq } from './pages/FAQ/Faq';
 import Team from './pages/Team/Team';
 import { News } from './pages/News/News';
+import NewsDetail from './pages/News/NewsDetail';
+import Portal from './pages/Portal/Portal';
 
 const Layout = () => {
 
@@ -22,6 +24,9 @@ const Layout = () => {
             <Route path='/faq' element={<Faq/> } />
             <Route path='/team' element={<Team/> } />
             <Route path='/news' element={<News/> } />
+            <Route path='/newsDetail' element={<NewsDetail/> } />
+            <Route path='/portal' element={<Portal/> } />
+         
           </Routes>
 
           

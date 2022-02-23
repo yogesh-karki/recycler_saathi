@@ -66,3 +66,52 @@
         }
     }
 }
+
+.news_detail {
+    padding: 80px 0;
+    background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+
+    .wrap {
+        width: 570px;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .nd_head {
+        color: #003755;
+
+        h4 {
+            font-size: 35px;
+            line-height: 1.2;
+            font-family: "Proxima Nova Rg";
+            color: #003755;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    }
+
+    .nd_figure {
+        margin-top: 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .nd_text {
+        margin-top: 50px;
+        
+        p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        
+        }
+    }
+}
