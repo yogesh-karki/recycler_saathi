@@ -25,6 +25,11 @@ const teamData = [
         post: 'Finance & Administrative Officer'
     },
     {
+        name: 'Rammaya Shrestha',
+        img: 'images/team/Rammaya Shrestha.jpg',
+        post: 'Community Outreach Officer'
+    },
+    {
         name: 'Abish Man Shakya',
         img: 'images/team/Abish Man Shakya.png',
         post: 'VFC Program Coordinator'
@@ -39,6 +44,26 @@ const teamData = [
         img: 'images/team/Sushila Shrestha.jpg',
         post: 'Program Intern'
     },
+    {
+        name: 'Monica Khadka',
+        img: 'images/team/Monica Khadka.jpg',
+        post: 'Program Intern'
+    },
+    {
+        name: 'Rajdev Khang',
+        img: 'images/team/Rajdev Khang.png',
+        post: 'Recycling Assistant'
+    },
+    {
+        name: 'Rajendra Shrestha',
+        img: 'images/team/Rajendra Shrestha.png',
+        post: 'Recycling Assistant'
+    },
+    {
+        name: 'Binay Kumar Khang',
+        img: 'images/team/Binay Kumar Khang.png',
+        post: 'Recycling Assistant'
+    },
 
 
 ]
@@ -50,8 +75,7 @@ const Team = () => {
         <Banner 
             colorTheme={'light'}
             height={"smallHeight"}
-            title={'<h2><strong>Our Team</strong> </h2>'}
-         
+            title={'<h2><strong>OUR TEAM</strong> </h2>'}
         />
 
         <section className="team">

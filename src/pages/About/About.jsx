@@ -17,13 +17,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const About = () => {
+
+  useEffect(()=> {
+    gsap.to('.abt_objective .objectives', {backgroundColor: '#01283c',duration: 0.8,
+      scrollTrigger: {
+        trigger: '.abt_objective',
+        start: 'top center+=5%',
+        toggleActions: 'play reset restart reverse',
+      }
+    })
+
+    gsap.to('.inner_banner', {backgroundColor: '#01283c',duration: 0.8,
+      scrollTrigger: {
+        trigger: '.abt_objective',
+        start: 'top center+=5%',
+        toggleActions: 'play reset restart reverse',
+      }
+    })
+  })
   
 
   return (
     <>
         <Banner 
           colorTheme={'light'}
-          title={'<h2>Establish a <strong>self-sustainable recycling enterprise </strong> in Nepal </h2>'}
+          subtitle={'About'}
+          title={'<h2>Establish a <strong>self-sustainable recycling enterprise  in Nepal</strong> </h2>'}
           figure={<BannerSvg />}
         />
 

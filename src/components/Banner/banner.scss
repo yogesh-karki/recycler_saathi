@@ -1,12 +1,13 @@
 .inner_banner {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 
     &.light {
-        background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+        // background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+        background: #fff;
     }
 
     &.dark {
@@ -25,15 +26,31 @@
         width: 610px;
         max-width: 100%;
 
+        span {
+            font-size: 16px;
+            color: #14b6ca;
+            font-family: "Proxima Nova Rg";
+            display: block;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
 
         h2 {
             color: #10b5c9;
-            font-size: 62px;
-            line-height: 1.1;
-            font-family: 'Proxima Nova Th';
+            font-size: 42px;
+            line-height: 1.18;
+            font-family: 'Proxima Nova Rg';
+            text-transform: uppercase;
+            position: relative;
 
-            strong {
-                font-family: 'Proxima Nova Lt';
+            &::before {
+                position: absolute;
+                top: -20px;
+                content: "";
+                left: 0;
+                width: 90px;
+                height: 1px;
+                background: #10b5c9;
             }
         }
     }

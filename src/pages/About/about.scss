@@ -1,13 +1,13 @@
 $turquoise : #10b5c9;
 
 .abt-banner {
-    background-color: #cafafe;
+    background-color: #fff;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+    // background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
     
 
 
@@ -38,10 +38,18 @@ $turquoise : #10b5c9;
 
 .abt_objective {
     .objectives {
-        background-image: linear-gradient(to right top, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+        // background-image: linear-gradient(to right top, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+        background: #fff;
+
+        .wrap {
+            .card {
+                background: #10b5c9 !important;
+              
+            }
+        }
 
         .objective_head {
-            color: #003755;
+            color: #fff;
 
             
         }
@@ -49,10 +57,10 @@ $turquoise : #10b5c9;
 }
 
 .programs {
-    background-color: #01283c;
+    background-color: #fff;
     padding: 100px 0;
     position: relative;
-    background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+    // background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
 
     .program_head {
         text-align: center;

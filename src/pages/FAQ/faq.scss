@@ -1,28 +1,8 @@
-.faq_banner {
-    height: 350px;
-    display: flex;
-    align-items: center;
-    background: #01283c;
-    background-image: linear-gradient(to right bottom, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
-    
-
-    .container {
-        width: 100%;
-    }
-
-    .text {
-        h2 {
-            color: #10b5c9;
-            font-size: 62px;
-            line-height: 1.1;
-            font-family: "Proxima Nova Th";
-        }
-    }
-}
 
 .faq{
     background-color: #01283c;
-    background-image: linear-gradient(to right top, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+    // background-image: linear-gradient(to right top, #ffffff, #f8fcff, #ebfaff, #dafaff, #cafafe);
+    background: #fff;
     padding-bottom: 80px;
 
     .faq_collapse {
@@ -32,6 +12,10 @@
 
         .ant-collapse-item {
             border-bottom: 1px solid #dbe7e8;
+
+            &:last-child {
+                border-bottom: 0;
+            }
         }
 
         .ant-collapse-header {
@@ -39,7 +23,7 @@
             font-size: 24px;
             font-family: "Proxima Nova Rg";
             line-height: 1.1;
-            padding: 40px 50px 40px 40px;
+            padding: 40px 50px 40px 0px;
             position: relative;
             letter-spacing: 0.4px;
 
@@ -63,7 +47,7 @@
         .ant-collapse-content-box {
             background: #fff;
             color: #003755;
-            padding: 0 40px 40px;
+            padding: 0 40px 40px 0;
             font-family: "Proxima Nova Th";
             padding-right: 30px;
             

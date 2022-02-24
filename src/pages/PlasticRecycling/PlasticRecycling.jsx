@@ -87,6 +87,7 @@ const PlasticRecycling = () => {
         <div className="pl_banner">
             <Banner 
             colorTheme={'dark'}
+            subtitle={'Plastic Recycling'}
             title={'<h2>Plastic waste is <strong>not a waste, it’s a resource</strong> </h2>'}
             figure={<PrBanner />}
             />
@@ -114,7 +115,7 @@ const PlasticRecycling = () => {
         <section className="steps">
             <div className="container">
                 <div className="steps_head">
-                    <h3><strong>Recycling</strong> Steps</h3>
+                    <h3>The<strong> Process</strong></h3>
                 </div>
 
                 <Swiper

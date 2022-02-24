@@ -17,7 +17,11 @@ const Home = () => {
 
         <div className="container">
             <div className="text">
-              <h1>SELF-SUSTAINABLE RECYCLING ENTERPRISE</h1>
+              {/* <h1>SELF-SUSTAINABLE RECYCLING ENTERPRISE</h1> */}
+                <h2>We are working together to end plastic waste</h2>
+                <p>Ending plastic waste is ambitious. But it is through collaboration and collective action that this complex problem can be solved.</p>
+                <a href="">Learn More</a>
+
             </div>
         </div>
       </section>

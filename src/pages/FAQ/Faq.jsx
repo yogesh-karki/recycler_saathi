@@ -46,7 +46,7 @@ export const Faq = () => {
         <Banner 
             colorTheme={'light'}
             height={"smallHeight"}
-            title={'<h2><strong>FAQs</strong> </h2>'}
+            title={'<h2><strong>FAQ</strong> </h2>'}
          
         />
 

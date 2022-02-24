@@ -1,7 +1,7 @@
 import React from 'react'
 import {  NavLink } from 'react-router-dom';
 
-import Logo from '../Logo'
+
 
 import './header.scss'
 
@@ -14,10 +14,9 @@ const Header = () => {
           <div className="wrap">
             <div className="logo">
               <NavLink to="/">
-                <Logo />
+                <img src="./images/logo.svg" />
               </NavLink>
             </div>
-
             <nav>
               <ul>
                 <li><NavLink activeClassName="active_class" to='about'>About Us</NavLink></li>
