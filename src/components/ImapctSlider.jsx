@@ -98,7 +98,7 @@ const ImapctSlider = () => {
                 </div>
 
                 <div className="slider_range">
-                    <Slider min={1} max={20} tooltipVisible onChange = {loadData} />
+                    <Slider min={1} max={3113} tooltipVisible onChange = {loadData} />
         
                 </div>
             </div>

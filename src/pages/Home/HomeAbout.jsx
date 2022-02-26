@@ -3,7 +3,8 @@ import React,{useEffect}  from 'react'
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import BannerSvg from './BannerSvg';
+
+import NepalMap from './NepalMap';
 
 gsap.registerPlugin(ScrollTrigger); 
 
@@ -19,8 +20,7 @@ const HomeAbout = () => {
             start: 'top top+=5%',
             pin: '.abt .image .animate_svg',
             endTrigger:'.abt .wrap .textcard',
-            end: 'bottom bottom',
-          
+            end: 'bottom center+=30%',       
           })
         }
 
@@ -59,7 +59,8 @@ const HomeAbout = () => {
               <div className="image">
                   {/* <img src="./images/recyclesaathi.svg" alt="" /> */}
                   <div className="animate_svg">
-                    <BannerSvg />
+                    {/* <BannerSvg /> */}
+                    <NepalMap />
                   </div>
               </div>
             </div>

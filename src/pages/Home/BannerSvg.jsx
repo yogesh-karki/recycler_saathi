@@ -7,42 +7,42 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger); 
 
 const BannerSvg = () => {
-    useEffect(() => {
+    // useEffect(() => {
         
-        gsap.from('svg .bottles',{
-            y: 4,
-            duration: 5,
-            repeat: -1,
-            yoyo: true,
-        })
+    //     gsap.from('svg .bottles',{
+    //         y: 4,
+    //         duration: 5,
+    //         repeat: -1,
+    //         yoyo: true,
+    //     })
 
-        gsap.from('svg .man', {
-            x: 10,
-            duration: 5,
-            repeat: -1,
-            yoyo: true
-        })
+    //     gsap.from('svg .man', {
+    //         x: 10,
+    //         duration: 5,
+    //         repeat: -1,
+    //         yoyo: true
+    //     })
 
-        gsap.from('svg .woman', {
-            y: -10,
-            x: 5,
-            duration: 6,
-            repeat: -1,
-            yoyo: true,
-            ease: "none"
-        })
+    //     gsap.from('svg .woman', {
+    //         y: -10,
+    //         x: 5,
+    //         duration: 6,
+    //         repeat: -1,
+    //         yoyo: true,
+    //         ease: "none"
+    //     })
 
-        gsap.to('svg .recycle',{
-            rotate: 360,
-            transformOrigin: 'center center',
-            scrollTrigger: {
-                trigger: '.abt',
-                start: 'top top',
-                end: 'bottom bottom',
-                scrub: 1,
-            }
-        })
-    })
+    //     gsap.to('svg .recycle',{
+    //         rotate: 360,
+    //         transformOrigin: 'center center',
+    //         scrollTrigger: {
+    //             trigger: '.abt',
+    //             start: 'top top',
+    //             end: 'bottom bottom',
+    //             scrub: 1,
+    //         }
+    //     })
+    // })
   
     return (
     <>

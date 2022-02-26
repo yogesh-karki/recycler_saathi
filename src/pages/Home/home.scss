@@ -76,19 +76,55 @@
         .image {
             width: 50%;
 
+            .nepal_map {
+                width: 50vw;
+
+                circle {
+                    fill: #10b5c9;
+                }
+
+                .prov {
+                    fill: #10435e;
+                }
+            }
 
             svg {
                 width: 100%;
-                height: 640px;
-                object-fit: cover;
-                padding-left: 50px;
+        
+                path {
+                    fill: #2d74aa;
+                    // opacity: 0.5;
+                    
+                    &.mdp {
+                        stroke: none;
+                        animation-duration: 2s;
+                        animation-name: pulse;
+                        transform-origin: 50% 50%;
+                        animation-iteration-count: infinite;
+                        opacity: 1;
+                        
+                    }
+        
+                    &.markerdata {
+                        stroke: none;
+                        position: relative;
+                        opacity: 1;
+                        
+                        
+                        
+        
+                    }
+                
+                }
+        
+        
             }
 
         }
 
         .text {
             margin: 50px 0;
-            margin-bottom: 200px;
+            margin-bottom: 100px;
             padding-right: 50px;
 
             &:last-child {
@@ -115,6 +151,182 @@
             }
         }
     }
+}
+
+.impact_grow {
+    background: #fff;
+    padding: 100px 0 0;
+    width: 100%;
+    overflow: hidden;
+
+    .head {
+        text-align: center;
+
+        h3 {
+            color: #10b5c9;
+            text-transform: uppercase;
+            width: 430px;
+            max-width: 100%;
+            margin: auto;
+        }
+    }
+
+    .impact_accordion {
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+
+        .card {
+            flex: 1 1;
+            height: 542px;
+            background-position: center !important;
+            background-size: cover !important;
+            position: relative;
+            transition: 0.8s;
+            cursor: pointer;
+            // filter: grayscale(0.6);
+
+            .counter {
+                opacity: 0;
+                visibility: none;
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 0.6;
+                }
+
+                .content {
+                    .expand_btn {
+                        transform: scale(1.1) translateX(-50%);
+    
+                        img {
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+
+            &.expand {
+                flex: 2.5 1;
+              
+                .counter {
+                    transition-delay: 0.9s;
+                    opacity: 1;
+                    visibility: visible;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    width: 90%;
+
+                    h2 {
+                        font-size: 48px;
+                        font-family: 'Roboto Mono', monospace;
+                        color: #fff;
+                        font-weight: 800;
+                        position: relative;
+                        display: inline-flex;
+                        align-items: center;
+                        line-height: 1;
+
+                        span {
+                            font-size: 18px;
+                            font-weight: 200;
+                            margin-left: 5px;
+                   
+                      
+                          
+                        }
+                        
+                    }
+
+                    p {
+                        line-height: 1.3;
+                        width: 70%;
+                        max-width: 90%;
+                        margin: 15px auto 0;
+                    }
+                }
+
+                &::after {
+                    opacity: 0.2;
+                }
+
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: #01283c;
+                opacity: 0.4;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                transition: 0.8s;
+            }
+
+            .content {
+                position: relative;
+                z-index: 2;
+                color: #fff;
+                width: 100%;
+                height: 100%;
+
+                .title {
+                    padding-top: 30px;
+
+                    h4 {
+                        color: #fff;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-family: 'Proxima Nova Lt';
+                        line-height: 1.3;
+        
+                        em {
+                            font-style: normal;
+                            display: block;
+                        }
+                    }
+                }
+
+                .expand_btn {
+                    opacity: 0.7;
+                    background: #fff;
+                    display: inline-flex;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: 0.8s;
+
+                    img {
+                        width: 25px;
+                        transition: 0.5s;
+                    }
+                }
+            }
+
+            
+
+            .count {
+                font-family: 'Roboto Mono', monospace;
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+
+
 }
 
 .impacts {
@@ -488,12 +700,13 @@
     }
 
     .ant-slider-handle {
-        width: 80px;
-        height: 80px;
-        margin-top: -36px;
+        width: 100px;
+        height: 100px;
+        margin-top: -46px;
         background-color: #56e2f3;
         border: solid 0px #91d5ff;
         position: relative;
+        z-index: 2;
 
         p {
             color: #56e2f3;
@@ -518,14 +731,145 @@
     background-color: transparent;
     padding: 0;
     min-height: auto;
-    font-size: 32px;
-    transform: translateY(76px);
+    font-size: 24px;
+    transform: translateY(82px);
     font-family: "Proxima Nova Lt";
     box-shadow: none;
     cursor: pointer;
+    z-index: 1;
     
 }
 
+.home_news {
+    padding: 100px 0;
+    overflow: hidden;
+    background-color: #f2f5f6;
+
+    .wrap {
+        width: 1240px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .news_head {
+            width: 25%;
+
+            h3 {
+                color: #10b5c9;
+                text-transform: uppercase;
+                margin-bottom: 20px
+            }
+
+            .slider_nav {
+                display: flex;
+                margin-top: 60px;
+
+                .slideNav {
+                    cursor: pointer;
+                    display: inline-flex;
+                    width: 55px;
+                    height: 55px;
+                    border: 1px solid #10b5c9;
+                    border-radius: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    color: #10b5c9;
+                    margin-right: 20px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.25);
+
+                        svg {
+                            transform: scale(0.9);
+                        }
+                    }
+
+                    svg {
+                        width: 20px;
+                        transition: .5s;
+
+                        path {
+                            fill: #10b5c9;
+                        }
+                    }
+                }
+            }
+        }
+
+        .news_slider {
+            width: 75%;
+
+            .swiper-button-prev, .swiper-button-next {
+                opacity: 0;
+            }
+        }
+
+    }
+
+    .news_slider {
+        a {
+            color: #003755;
+
+            &:hover {
+                h4 {
+                    color: #10b5c9;
+                }
+            }
+        }
+
+        .item {
+            background-color: #fff;
+            height: auto;
+        }
+
+        picture {
+            img {
+                width: 100%;
+                height: 225px;
+                object-fit: cover;
+            }
+        }
+
+        article {
+            padding: 30px 20px;
+
+            p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                color: #003755;
+                font-size: 20px;
+                line-height: 1.2;
+                font-family: "Proxima Nova Lt";
+            
+            }
+        }
+    }
+}
+
+.insta_feed {
+    padding: 100px 0;
+
+    .head {
+        max-width: 100%;
+        margin: auto;
+        width: 400px;
+        text-align: center;
+
+        h3 {
+            color: #10b5c9;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+
+        }
+    }
+
+    ._wPDyp {
+        height: 190px;
+    }
+}
 
 
   
@@ -553,8 +897,13 @@
 
 @media screen and (max-width: 480px) {
 
-    .banner .text h1 {
-        font-size: 55px;
+
+    .banner .text {
+        width: 100%; 
+
+        h1 {
+            font-size: 55px;
+        }
     }
 
     .abt .wrap .textcard {
@@ -572,11 +921,19 @@
 
     .abt .wrap .image {
         width: 100%;
+        margin-top: 50px;
+
+        svg {
+            padding-left: 0;
+            height: 280px;
+        }
     }
 
-    .abt .wrap .image svg {
-        padding-left: 0;
+
+    .abt .wrap .image .nepal_map {
+        width: 100%;
     }
+    
 
     .impacts .impact-nums .icard {
         width: 100%;
@@ -616,4 +973,36 @@
             margin-top: 20px;
         }
     }
+
+    .home_slider .wrap .num_wrap {
+        width: 100%;
+        margin: 20px 0;
+        padding-left: 20px;
+
+        p {
+            text-align: left !important;
+            margin-left: 0 !important ;
+        }
+
+        .num_flex {
+            justify-content: start !important;
+        }
+    }
+
+    .impact_grow .impact_accordion {
+        flex-direction: column;
+    }
+
+    .home_news .wrap {
+        width: 100%;
+
+        .news_head {
+            width: 100%;
+        }
+
+        .news_slider {
+            width: 100%;
+        }
+    }
+    
 }
