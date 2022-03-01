@@ -2,6 +2,14 @@ footer {
     padding: 80px 0 20px;
     background: #003755;
 
+    .logo_support img {
+        height: 70px;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+
     .suscribe {
         color: #fff;
         text-align: center;
@@ -15,7 +23,7 @@ footer {
         }
 
         p {    
-            max-width: 330px;
+            max-width: 520px;
             margin: auto;
             font-family: "Proxima Nova Th";
             line-height: 1.4;
@@ -27,19 +35,20 @@ footer {
             width: 60%;
             margin: auto;
             display: flex;
+            justify-content: center;
 
-            input {
-                width: 80%;
-                height: 48px;
-                border: 0;
-                padding: 0 10px;
-                font-family: "Proxima Nova Rg";
-                color: #003755;
+            // input {
+            //     width: 80%;
+            //     height: 48px;
+            //     border: 0;
+            //     padding: 0 10px;
+            //     font-family: "Proxima Nova Rg";
+            //     color: #003755;
 
-                &:focus {
-                    outline: none;
-                }
-            }
+            //     &:focus {
+            //         outline: none;
+            //     }
+            // }
 
             button {
                 background: #10b5c9;
@@ -103,6 +112,11 @@ footer {
         .wrap {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            color: #fff;
         }
 
         .logo {
@@ -110,7 +124,7 @@ footer {
             align-items: center;
 
             p {
-                font-size: 16px;
+                font-size: 15px;
                 color: #fff;
                 font-family: "Proxima Nova Th";
                 font-weight: 100;
@@ -126,9 +140,9 @@ footer {
 
         .copyright {
             color: #fff;
-            font-size: 16px;
+            font-size: 15px;
             font-family: "Proxima Nova Th";
-                font-weight: 100;
+            font-weight: 100;
         }
 
     }

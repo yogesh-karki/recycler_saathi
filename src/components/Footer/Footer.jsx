@@ -1,23 +1,27 @@
 import React from 'react'
-import Logo from '../Logo'
 
 import './footer.scss'
 
 import { FacebookOutlined , InstagramOutlined, TwitterOutlined, LinkedinOutlined  } from '@ant-design/icons';
 
 const Footer = () => {
-  return (
+
+    const date = new Date();
+    let year= date.getFullYear()
+
+
+    return (
     <>
         <footer>
             <div className="suscribe">
                 <div className="container">
                     <div className="wrap">
                         <h3>Become a <strong>Saathi</strong></h3>
-                        <p>Join us to stay up-to-date on insights, events and new solutions. You can unsuscribe anytime.</p>
+                        <p> We are excited to help your bailing centers recycle more. To get started, sign up below and send us a picture of your nearest collector to win exciting prizes.</p>
 
                         <div className="btn">
-                            <input type="text" placeholder='Your Email Address' />
-                            <button>Join Now</button>
+                            {/* <input type="text" placeholder='Your Email Address' /> */}
+                            <button>Sign Up</button>
                         </div>
                     </div>
                 </div>
@@ -41,10 +45,15 @@ const Footer = () => {
                 <div className="container">
                     <div className="wrap">
                         <div className="logo">
-                            <p>© 2021 Recycler Saathi</p>
+                            <p>© {year} <a href="https://creasion.org/" target="_b">Creasion</a></p>
                         </div>
 
-                        <p className='copyright'>Powered by Hue Shine</p>
+                        <div className="logo_support">
+                            <img src="./images/cococola_bottlers_nepal.svg" alt="" />
+                            <img src="./images/creasion.svg" alt="" />
+                        </div>
+
+                        <p className='copyright'>Powered by <a href="https://hueshine.com/">Hue Shine</a></p>
                     </div>
                 </div>
             </div>

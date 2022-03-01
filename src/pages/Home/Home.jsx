@@ -43,7 +43,7 @@ const Home = () => {
 
         {/* <InstagramFeed
           token="IGQVJWRHBRMmZADTHVmR3VnbUduY25zb25WcWhsRUktVDdMRk0xRm9MRTFqTEE3TFQ2cGFDNkp3Q3IyYVl2OTZAsUS1UbmNjTnhFYUxPbktmaU9CbFBjbmF4QWdWY1JOTk9HX0dNaU9yem1aVWxDZAk5GOQZDZD"
-          counter="10"
+          counter="6"
         /> */}
       </div>
     </>

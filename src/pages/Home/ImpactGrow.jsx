@@ -72,7 +72,7 @@ const ImpactGrow = () => {
         <section className='impact_grow'>
             <div className="container">
                 <div className="head">
-                    <h3>The impacts of <strong>Recycler Saathi</strong> program</h3>
+                    <h3>The impacts of <strong>Recycler Saathi</strong></h3>
                 </div>
             </div>
 

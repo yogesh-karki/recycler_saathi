@@ -73,18 +73,45 @@
             width: 50%;
         }
 
+
         .image {
             width: 50%;
 
+
+            .map_footer {
+                position: relative;
+            }
+
+            .tooltip {
+                position: absolute;
+                top: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                color: #10b5c9;
+                text-transform: uppercase;
+            }
+
             .nepal_map {
                 width: 50vw;
-
                 circle {
                     fill: #10b5c9;
+                    cursor: pointer;
                 }
 
                 .prov {
                     fill: #10435e;
+                }
+
+                .city {
+                    position: relative;
+                }
+
+                p {
+                    color: #10b5c9;
+                    text-align: center;
+                    font-family: "Proxima Nova Th";
+                    font-size: 16px;
                 }
             }
 
@@ -168,6 +195,12 @@
             width: 430px;
             max-width: 100%;
             margin: auto;
+            font-family: "Proxima Nova Th";
+
+            strong {
+                font-family: "Proxima Nova Rg";
+                font-weight: 200;
+            }
         }
     }
 
