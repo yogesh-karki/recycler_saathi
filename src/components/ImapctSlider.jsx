@@ -24,19 +24,19 @@ const ImapctSlider = () => {
             number: 1,
             unit: "tons",
             text: "Waste PET bottles recycled",
-            img: "./images/icons/bottles.svg",
+            img: "./images/slide/bottle.png",
         },
         {
             number: 1.5,
             unit: "tons",
             text: "Carbon Emission Controlled",
-            img: "./images/icons/carbon_emission.svg",
+            img: "./images/slide/earth.png",
         },
         {
             number: 7.4,
             unit: "cubic yards",
             text: "Landfill space saved",
-            img: "./images/icons/districts.svg",
+            img: "./images/slide/landfill.png",
         }
     ]
 

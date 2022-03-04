@@ -1,6 +1,6 @@
 header {
-    padding: 10px 0;
-    overflow: hidden;
+   
+    // overflow: hidden;
     margin: auto;
     z-index: 999;
     background: #fff;
@@ -68,7 +68,60 @@ header {
                 align-items: center;
 
                 li {
-                    margin: 0 25px;
+                    padding: 15px 25px;
+                    position: relative;
+             
+                    
+                    &.has_dropdown {
+                        cursor: pointer;
+
+                        &:hover {
+                            background: #10b5c9;
+                            border-bottom: 1px solid #0e9fb1;
+                            
+
+                            a {
+                                color: #fff;
+                                font-family: "Proxima Nova Rg";
+                            }
+    
+                            .sub_menu {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+
+                        .sub_menu {
+                            position: absolute;
+                            top: 58px;
+                            left: 0;
+                            z-index: 3;
+                            width: 230px;
+                            background: #10b5c9;
+                            opacity: 0;
+                            visibility: hidden;
+                        
+                            a {
+                                display: block;
+                                border-bottom: 1px solid #0e9fb1;
+                                color: #fff;
+                                padding: 12px 22px ;
+                                font-family: "Proxima Nova Lt";
+                                font-size: 14px;
+                                transition: 0;
+
+                                &.active {
+                                    color: #fff !important;
+                                }
+    
+                                &:last-child {
+                                    border-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    
 
                     &:last-child {
                         margin-right: 0;
@@ -80,6 +133,8 @@ header {
                         font-size: 17px;
                         font-family: "Proxima Nova Lt";
                     }
+
+                    
                 }
             }
         }
@@ -96,6 +151,8 @@ a {
     }
 }
 
+
+
 @media screen and (max-width: 1400px) {
     header .wrap {
         padding: 0 20px;
@@ -103,7 +160,7 @@ a {
         nav {
             ul {
                 li {
-                    margin: 0 18px;
+                    padding: 12px 18px;
                 }
             }
         }

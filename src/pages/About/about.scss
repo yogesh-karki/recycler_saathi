@@ -1,5 +1,206 @@
 $turquoise : #10b5c9;
 
+.banner_half {
+    height: 70vh;
+
+    &::after {
+        background: linear-gradient(0deg, #01283c 0%, rgba(255, 255, 255, 0) 50%);
+    }
+
+    .text {
+        top: auto;
+        bottom: 20%;
+        max-width: 450px;
+
+        h3 {
+            color: #fff;
+            font-family: "Proxima Nova Rg";
+            text-transform: uppercase;
+            font-size: 56px;
+
+            strong {
+                font-family: "Proxima Nova Lt";
+            }
+            
+        }
+
+        h6 {
+            color: #fff;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-family: "Proxima Nova Th";
+            padding-bottom: 30px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                bottom: 15px;
+                left: 0;
+                width: 90px;
+                height: 1px;
+                background: #fff;
+                content: "";
+            }
+        }
+    }
+}
+
+.plastic_intro {
+    .p_card {
+        background: #01283c;
+
+        &:nth-child(even) {
+            background: #fff;
+
+            .card_wrap {
+                color: #003755;
+
+                .content {
+                    h4 {
+                        color: #003755;
+                    }
+
+                    p {
+                        strong {
+                            font-family: "Proxima Nova Lt";
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .card_wrap {
+            padding: 100px 0;
+            display: flex;
+            flex-wrap: wrap;
+            color: #f3f3f3;
+            overflow: hidden;
+
+            
+
+            .head {
+                width: 30%;
+
+                h3 {
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    color: #10b5c9;
+                
+                }
+
+                h6 {
+                    color: #10b5c9;
+                    font-size: 16px;  
+                    font-family: "Proxima Nova Rg";
+                    text-transform: uppercase;
+
+                    margin-bottom: 15px;
+                }
+
+            }
+
+            .content {
+                width: 70%;
+
+                h4 {
+                    margin-top: 70px;
+                    color: #f3f3f3;
+                    font-size: 20px;
+                    font-family: "Proxima Nova Th";
+                    text-transform: uppercase;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+
+                p {
+                    margin-bottom: 25px;
+                    
+
+                    strong {
+                        font-size: 32px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .plastic_intro {
+//     background: #01283c;
+//     padding: 100px 0;
+
+//     .wrap {
+//         display: flex;
+//         flex-wrap: wrap;
+
+//         .sidebar {
+//             width: 25%;
+//             ul {
+//                 li {
+//                     margin-bottom: 15px;
+
+//                     &.active {
+//                         a {
+//                             color: #10b5c9;
+//                         }
+//                     }
+
+//                     a {
+//                         color: #fff;
+//                         font-size: 20px;
+//                         text-transform: uppercase;
+//                         font-family: "Proxima Nova Th";
+                        
+//                     }   
+//                 }
+//             }
+
+//         }
+
+//         .content {
+//             width: 75%;
+//             padding-left: 80px;
+//             color: #fff;
+        
+//             .p_card {
+//                 margin-bottom: 100px;
+
+//                 h3,h6 {
+//                     color: #fff;
+//                 }
+
+//                 h3 {
+//                     font-size: 48px;
+//                     text-align: center;
+//                     font-family: "Proxima Nova Lt";
+//                     text-transform: uppercase;
+//                 }
+
+//                 h6 {
+//                     font-size: 24px;
+//                     font-family: "Proxima Nova Th";
+//                     margin: 0 auto 30px;
+//                     text-align: center;
+//                     width: 420px;
+//                     max-width: 100%;
+//                 }
+
+//                 p {
+//                     margin-bottom: 15px;
+//                 }
+//             }
+
+            
+
+//         }
+
+//     }
+// }
+
 .abt-banner {
     background-color: #fff;
     height: 100vh;

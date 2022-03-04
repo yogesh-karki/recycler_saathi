@@ -20,7 +20,6 @@ const Footer = () => {
                         <p> We are excited to help your bailing centers recycle more. To get started, sign up below and send us a picture of your nearest collector to win exciting prizes.</p>
 
                         <div className="btn">
-                            {/* <input type="text" placeholder='Your Email Address' /> */}
                             <button>Sign Up</button>
                         </div>
                     </div>
@@ -44,15 +43,25 @@ const Footer = () => {
             <div className="footer_bottom">
                 <div className="container">
                     <div className="wrap">
-                        <div className="logo">
-                            <p>© {year} <a href="https://creasion.org/" target="_b">Creasion</a></p>
-                        </div>
-
                         <div className="logo_support">
-                            <img src="./images/cococola_bottlers_nepal.svg" alt="" />
-                            <img src="./images/creasion.svg" alt="" />
-                        </div>
+                            <div className="img">
+                                <h4>An initiation of</h4>
+                                <img src="./images/creasion.svg" alt="" />
+                            </div>
 
+                            <div className="img">
+                                <h4>Supported by</h4>
+                                <img src="./images/cococola_support.svg" alt="" />
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="footer_copy">
+                <div className="container">
+                    <div className="wrap">
+                        <p>© {year} <a href="https://creasion.org/" target="_b">Creasion. </a> </p>
                         <p className='copyright'>Powered by <a href="https://hueshine.com/">Hue Shine</a></p>
                     </div>
                 </div>

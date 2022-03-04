@@ -2,11 +2,27 @@ footer {
     padding: 80px 0 20px;
     background: #003755;
 
-    .logo_support img {
-        height: 70px;
+    .logo_support {
+        display: flex;
 
-        &:first-child {
-            margin-right: 10px;
+        h4 {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: "Proxima Nova Th";
+            text-align: center;
+        }
+
+        .img {
+            margin: 0 20px;
+        }
+
+        img {
+            height: 100px;
+            
+    
+            &:first-child {
+                margin-right: 10px;
+            }
         }
     }
 
@@ -37,18 +53,6 @@ footer {
             display: flex;
             justify-content: center;
 
-            // input {
-            //     width: 80%;
-            //     height: 48px;
-            //     border: 0;
-            //     padding: 0 10px;
-            //     font-family: "Proxima Nova Rg";
-            //     color: #003755;
-
-            //     &:focus {
-            //         outline: none;
-            //     }
-            // }
 
             button {
                 background: #10b5c9;
@@ -111,40 +115,42 @@ footer {
 
         .wrap {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
+            align-items: flex-end;
         }
 
         a {
             color: #fff;
         }
 
-        .logo {
+        
+
+    }
+
+    .footer_copy {
+        padding-top: 20px;
+        border-top: 1px solid #0d4564;
+
+        .wrap {
             display: flex;
-            align-items: center;
-
-            p {
-                font-size: 15px;
-                color: #fff;
-                font-family: "Proxima Nova Th";
-                font-weight: 100;
-            }
-
-            svg {
-                width: 45px;
-                path {
-                    fill: #fff;
-                }
-            }
+            justify-content: center;
+            align-items: flex-end;
         }
 
-        .copyright {
+        a {
             color: #fff;
-            font-size: 15px;
+        }
+
+
+        p {
+            color: #fff;
+            font-size: 14px;
             font-family: "Proxima Nova Th";
             font-weight: 100;
-        }
 
+            margin-right: 10px;
+        }
+   
     }
 
 }

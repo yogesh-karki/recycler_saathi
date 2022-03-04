@@ -11,6 +11,7 @@ import Team from './pages/Team/Team';
 import { News } from './pages/News/News';
 import NewsDetail from './pages/News/NewsDetail';
 import Portal from './pages/Portal/Portal';
+import PlasticIntroduction from './pages/About/PlasticIntroduction';
 
 const Layout = () => {
 
@@ -20,6 +21,7 @@ const Layout = () => {
           <Routes>
             <Route path='/' element={<Home  />} />
             <Route path='/about' element={<About  />} />
+            <Route path='/plastic_introduction' element={<PlasticIntroduction  />} />
             <Route path='/plastic_recycling' element={<PlasticRecycling/> } />
             <Route path='/faq' element={<Faq/> } />
             <Route path='/team' element={<Team/> } />
@@ -32,6 +34,8 @@ const Layout = () => {
           
           
         <Footer />
+
+       
     </>
   )
 }

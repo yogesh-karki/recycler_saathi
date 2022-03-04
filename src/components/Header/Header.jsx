@@ -20,9 +20,16 @@ const Header = () => {
                 <nav>
                   <ul>
                     
-                    <li><NavLink activeClassName="active_class" to='/plastic_recycling'>plastic</NavLink></li>
-                    <li><NavLink activeClassName="active_class" to='/problems'>problems</NavLink> </li>
-                    <li><NavLink activeClassName="active_class" to='/updates'>updates</NavLink> </li>
+                    <li className='has_dropdown'>
+                      <a href='#'>plastic</a>
+
+                      <div className="sub_menu">
+                        <NavLink  to='/about_plastic'>About Plastic</NavLink>
+                        <NavLink  to='/plastic_introduction'>Plastic Introduction</NavLink>
+                      </div>
+                    </li>
+                    <li><NavLink  to='/problems'>problems</NavLink> </li>
+                    <li><NavLink  to='/updates'>updates</NavLink> </li>
                     {/* <li><NavLink activeClassName="active_class" to='/faq'>faqs</NavLink></li>
                     <li><NavLink activeClassName="active_class" to='/world_without_waste_vision'>World without waste vision</NavLink></li>
                     <li><NavLink activeClassName="active_class" to='/team'>Team</NavLink></li>
@@ -36,8 +43,8 @@ const Header = () => {
             <div className="secondary">
               <nav>
                 <ul>
-                  <li><NavLink activeClassName="active_class" to='/updates'>careers</NavLink> </li>
-                  <li><NavLink activeClassName="active_class" to='about'>About Us</NavLink></li>
+                  <li><NavLink  to='/updates'>careers</NavLink> </li>
+                  <li><NavLink  to='about'>About Us</NavLink></li>
                   <li><NavLink to='/portal' className='portal_btn'>Portal</NavLink></li>
                 </ul>
               </nav>
