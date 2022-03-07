@@ -42,8 +42,6 @@ const Portal = () => {
   const [viewport, setViewport] = useState({
     latitude: 28.2434542,
     longitude: 83.9835325,
-    width: "100vw",
-    height: "100vh",
     minZoom: 6.5,
     maxZoom: 20,
   });
