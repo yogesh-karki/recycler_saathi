@@ -174,8 +174,6 @@ const PlasticIntroduction = () => {
         headerRefs.current.forEach((el, index) => {
             const head = el.querySelector('.head')
     
-            console.log(head)
-
             gsap.to(head, {
                 scrollTrigger: {
                     trigger: el,
