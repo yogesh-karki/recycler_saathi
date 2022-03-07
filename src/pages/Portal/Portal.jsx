@@ -1,7 +1,5 @@
 import React,{useState, useMemo} from 'react'
 
-import ReactMapGL from 'react-map-gl';
-
 import  Map, {Source, Layer, Marker } from 'react-map-gl';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
@@ -99,14 +97,14 @@ const Portal = () => {
     <>
 
       <div className="portal">
-    
+        This Portals
 
         <Map
           {...viewport}
           style={{width: '100vw', height: '100vh'}}
           mapboxAccessToken={MAPBOX_TOKEN}
           mapStyle="mapbox://styles/yogeshkarki/cl0gcwa4e000d15p3bh6inkcq"
-          onMove={evt => setViewport(evt.viewport)} 
+     
         > 
 
           <Source id="provinceLabel" type="geojson" data={ProvinceLabel}>
