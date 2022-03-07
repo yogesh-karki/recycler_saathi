@@ -97,7 +97,6 @@ const Portal = () => {
     <>
 
       <div className="portal">
-    this portal
         <Map
           {...viewport}
           style={{width: '100vw', height: '100vh'}}
