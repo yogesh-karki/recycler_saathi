@@ -114,7 +114,7 @@ const Portal = () => {
     <>
 
       <div className="portal">
-        Change Its 
+        Run P
         <Map
           {...viewport}
           style={{width: '100vw', height: '100vh'}}
