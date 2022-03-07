@@ -2,6 +2,7 @@ import PETImage from  '../assets/campus.png'
 import MuseumImage from  '../assets/museum.png'
 import VFCImage from  '../assets/vfc.png'
 import RegionalOfficeImage from  '../assets/recyclersaathi.png'
+import SchoolImage from  '../assets/wss.png'
 
 
 const data =  [
@@ -9,7 +10,70 @@ const data =  [
         description: "Waste Smart Schools",
         longitude: "84.399276",
         latitude: "27.681443",
-        img: PETImage
+        img: SchoolImage
+    },
+
+    {
+        description: "Waste Smart Schools",
+        longitude: "84.414386",
+        latitude: "27.685756",
+        img: SchoolImage
+    },
+
+    {
+        description: "Waste Smart Schools",
+        longitude: "84.416056",
+        latitude: "27.674048",
+        img: SchoolImage
+    },
+
+    {
+        description: "Waste Smart Schools",
+        longitude: "84.434815",
+        latitude: "27.657176",
+        img: SchoolImage
+    },
+
+    {
+        description: "Waste Smart Schools",
+        longitude: "84.448315",
+        latitude: "27.668678",
+        img: SchoolImage
+    },
+
+    {
+        description: "Waste Smart Schools",
+        longitude: "84.503637",
+        latitude: "27.597025",
+        img: SchoolImage
+    },
+
+    {
+        description: "Waste Smart Schools",
+        longitude: "84.504261",
+        latitude: "27.580645",
+        img: SchoolImage
+    },
+
+    {
+        description: "Waste Smart Schools",
+        longitude: "84.329569",
+        latitude: "27.571026",
+        img: SchoolImage
+    },
+
+    {
+        description: "Waste Smart Schools",
+        longitude: "84.320048",
+        latitude: "27.565754",
+        img: SchoolImage
+    },
+
+    {
+        description: "Waste Smart Schools",
+        longitude: "84.340574",
+        latitude: "27.565618",
+        img: SchoolImage
     },
 
     {

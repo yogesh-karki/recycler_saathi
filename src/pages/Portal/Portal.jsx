@@ -97,7 +97,7 @@ const Portal = () => {
     <>
 
       <div className="portal">
-
+    this portal
         <Map
           {...viewport}
           style={{width: '100vw', height: '100vh'}}
@@ -106,13 +106,13 @@ const Portal = () => {
           onMove={evt => setViewport(evt.viewport)} 
         > 
 
-          {/* <Source id="provinceLabel" type="geojson" data={ProvinceLabel}>
+          <Source id="provinceLabel" type="geojson" data={ProvinceLabel}>
             <Layer {...provinceLabelStyle}/>
           </Source>
 
           <Source id="nepalMap" type='geojson' data={ProvinceMap}>
             <Layer {...mapStyleLine} />
-          </Source> */}
+          </Source>
           
           {pins}
           
