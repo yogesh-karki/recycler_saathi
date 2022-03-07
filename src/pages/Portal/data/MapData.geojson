@@ -1,0 +1,117 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "description": "Waste Smart Schools"
+          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.399276,
+            27.681443
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "description": "Waste Smart Schools"
+          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.414386,
+            27.685756
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "description": "Organisational Network"
+          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            81.617308,
+            28.060545
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "description": "Voulnteer For Change"
+          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.42682,
+            27.69461
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "description": "Collection Partners"
+          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.33729,
+            27.66739
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "description": "Regional office"
+          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.381741,
+            27.676382
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "description": "Waste Smart Musuem"
+          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.493973,
+            27.574041
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "description": "PET recycling center"
+          
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            83.989145,
+            28.209514
+          ]
+        }
+      }
+    ]
+  }
