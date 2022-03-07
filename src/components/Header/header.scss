@@ -76,14 +76,9 @@ header {
                         cursor: pointer;
 
                         &:hover {
-                            background: #10b5c9;
-                            border-bottom: 1px solid #0e9fb1;
-                            
-
-                            a {
-                                color: #fff;
-                                font-family: "Proxima Nova Rg";
-                            }
+                            background: #fff;
+                           
+                        
     
                             .sub_menu {
                                 opacity: 1;
@@ -97,23 +92,21 @@ header {
                             left: 0;
                             z-index: 3;
                             width: 230px;
-                            background: #10b5c9;
+                         
                             opacity: 0;
                             visibility: hidden;
                         
                             a {
                                 display: block;
+                                background-color: #fff;
                                 border-bottom: 1px solid #0e9fb1;
-                                color: #fff;
+                                color: #003755;
                                 padding: 12px 22px ;
                                 font-family: "Proxima Nova Lt";
                                 font-size: 14px;
                                 transition: 0;
 
-                                &.active {
-                                    color: #fff !important;
-                                }
-    
+                            
                                 &:last-child {
                                     border-bottom: 0;
                                 }

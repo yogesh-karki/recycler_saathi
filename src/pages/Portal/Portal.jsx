@@ -1,4 +1,4 @@
-import React,{useState, useMemo} from 'react'
+import React,{useRef, useState, useMemo, useEffect} from 'react'
 
 import  Map, {Source, Layer, Marker } from 'react-map-gl';
 
@@ -7,15 +7,20 @@ import ProvinceLabel from './data/ProvinceLabel.geojson'
 import ProvinceMap from './data/ProvinceMap.json'
 import data from './data/mapData'
 
-import 'mapbox-gl/dist/mapbox-gl.css';
-import './portal.scss'
+import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 
+import './portal.scss'
 
 
 const Portal = () => {
 
+  mapboxgl.accessToken = 'pk.eyJ1IjoieW9nZXNoa2Fya2kiLCJhIjoiY2txZXphNHNlMGNybDJ1cXVmeXFiZzB1eSJ9.A7dJUR4ppKJDKWZypF_0lA';
 
-
+  const mapContainer = useRef(null);
+  const map = useRef(null);
+  const [lng, setLng] = useState( 83.9835325);
+  const [lat, setLat] = useState(28.2434542);
+  const [zoom, setZoom] = useState(6.5);
 
 
   const pins = useMemo(
@@ -39,6 +44,15 @@ const Portal = () => {
     []
   );
 
+  useEffect(() => {
+    if (map.current) return; // initialize map only once
+    map.current = new mapboxgl.Map({
+    container: mapContainer.current,
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [lng, lat],
+    zoom: zoom
+    });
+    });
 
 
   const [viewport, setViewport] = useState({
@@ -98,15 +112,16 @@ const Portal = () => {
     <>
 
       <div className="portal">
+
         <Map
           {...viewport}
           style={{width: '100vw', height: '100vh'}}
           mapboxAccessToken={MAPBOX_TOKEN}
-          mapStyle="mapbox://styles/mapbox/streets-v9"
-          // onMove={evt => setViewport(evt.viewport)} 
+          mapStyle="mapbox://styles/yogeshkarki/cl0gcwa4e000d15p3bh6inkcq"
+          onMove={evt => setViewport(evt.viewport)} 
         > 
 
-          {/* <Source id="provinceLabel" type="geojson" data={ProvinceLabel}>
+          <Source id="provinceLabel" type="geojson" data={ProvinceLabel}>
             <Layer {...provinceLabelStyle}/>
           </Source>
 
@@ -114,10 +129,12 @@ const Portal = () => {
             <Layer {...mapStyleLine} />
           </Source>
           
-          {pins} */}
+          {pins}
           
         </Map>
       </div>
+
+      <div ref={mapContainer} className="map-container" />
     
 
  
