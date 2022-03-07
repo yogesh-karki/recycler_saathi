@@ -1,6 +1,8 @@
 import React,{useState, useMemo} from 'react'
 
-import ReactMapGL, { Source, Layer, Marker } from 'react-map-gl';
+import ReactMapGL from 'react-map-gl';
+
+import  Map, {Source, Layer, Marker } from 'react-map-gl';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import ProvinceLabel from './data/ProvinceLabel.geojson'
@@ -9,6 +11,7 @@ import data from './data/mapData'
 
 
 import './portal.scss'
+
 
 const Portal = () => {
 
@@ -98,7 +101,7 @@ const Portal = () => {
       <div className="portal">
     
 
-        <ReactMapGL
+        <Map
           {...viewport}
           style={{width: '100vw', height: '100vh'}}
           mapboxAccessToken={MAPBOX_TOKEN}
@@ -116,7 +119,7 @@ const Portal = () => {
           
           {pins}
           
-        </ReactMapGL>
+        </Map>
       </div>
     
 
