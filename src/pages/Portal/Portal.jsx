@@ -1,6 +1,8 @@
 import React,{useRef, useState, useMemo, useEffect} from 'react'
 
-import  Map, {Source, Layer, Marker } from 'react-map-gl';
+import Map from 'react-map-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+
+import  {Source, Layer, Marker } from 'react-map-gl';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import ProvinceLabel from './data/ProvinceLabel.geojson'
@@ -112,7 +114,7 @@ const Portal = () => {
     <>
 
       <div className="portal">
-
+        Change Its 
         <Map
           {...viewport}
           style={{width: '100vw', height: '100vh'}}
