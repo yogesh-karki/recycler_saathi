@@ -7,8 +7,9 @@ import ProvinceLabel from './data/ProvinceLabel.geojson'
 import ProvinceMap from './data/ProvinceMap.json'
 import data from './data/mapData'
 
-
+import 'mapbox-gl/dist/mapbox-gl.css';
 import './portal.scss'
+
 
 
 const Portal = () => {
@@ -101,11 +102,11 @@ const Portal = () => {
           {...viewport}
           style={{width: '100vw', height: '100vh'}}
           mapboxAccessToken={MAPBOX_TOKEN}
-          mapStyle="mapbox://styles/yogeshkarki/cl0gcwa4e000d15p3bh6inkcq"
-          onMove={evt => setViewport(evt.viewport)} 
+          mapStyle="mapbox://styles/mapbox/streets-v9"
+          // onMove={evt => setViewport(evt.viewport)} 
         > 
 
-          <Source id="provinceLabel" type="geojson" data={ProvinceLabel}>
+          {/* <Source id="provinceLabel" type="geojson" data={ProvinceLabel}>
             <Layer {...provinceLabelStyle}/>
           </Source>
 
@@ -113,7 +114,7 @@ const Portal = () => {
             <Layer {...mapStyleLine} />
           </Source>
           
-          {pins}
+          {pins} */}
           
         </Map>
       </div>
