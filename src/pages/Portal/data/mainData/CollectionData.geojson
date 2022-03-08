@@ -1,0 +1,383 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.33729,
+            27.66739
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.33801,
+            27.66922
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.35555,
+            27.67317
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.37387,
+            27.6933
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.36073,
+            27.76195
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.37928,
+            27.72716
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.38385,
+            27.73004
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.38556,
+            27.73485
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.3022,
+            27.69309
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.3006,
+            27.69386
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.30184,
+            27.69673
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.29966,
+            27.68833
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.31282,
+            27.69038
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.29912,
+            27.67799
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.29496,
+            27.67345
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.24369,
+            27.68675
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.30442,
+            27.73298
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.21889,
+            27.69287
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.54128,
+            27.90397
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.14177,
+            27.92622
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.06735,
+            27.75145
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.84457,
+            27.76906
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.80741,
+            27.79157
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.62349,
+            27.87205
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.56255,
+            27.85709
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.62558,
+            27.99342
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partner",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.71876,
+            27.11788
+          ]
+        }
+      }
+    ]
+  }

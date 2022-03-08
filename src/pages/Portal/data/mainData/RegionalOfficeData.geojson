@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Regional office",
+        "icon": "image url"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.381741,
+          27.676382
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.399276,
+            27.681443
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.414386,
+            27.685756
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.416056,
+            27.674048
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.434815,
+            27.657176
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.448315,
+            27.668678
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.503637,
+            27.597025
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.504261,
+            27.580645
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.329569,
+            27.571026
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.320048,
+            27.565754
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.340574,
+            27.565618
+          ]
+        }
+      }
+    ]
+  }

@@ -1,0 +1,89 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.42682,
+            27.69461
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.43432,
+            27.68361
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.5043,
+            27.5806
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.3296,
+            27.571
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.31623,
+            27.70884
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.3312,
+            27.68472
+          ]
+        }
+      }
+    ]
+  }

@@ -1,0 +1,33 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "PET recycling center",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            83.989145,
+            28.209514
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "PET recycling center",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            83.670385,
+            27.510475
+          ]
+        }
+      }
+    ]
+  }

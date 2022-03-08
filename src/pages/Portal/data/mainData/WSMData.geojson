@@ -1,0 +1,19 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Musuem",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.493973,
+            27.574041
+          ]
+        }
+      }
+    ]
+  }

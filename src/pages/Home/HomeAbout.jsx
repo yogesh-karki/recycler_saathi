@@ -14,18 +14,18 @@ const HomeAbout = () => {
     useEffect(()=> {
       
 
-        if(window.innerWidth > 500) {
-          ScrollTrigger.create({
-            trigger: '.abt .image',
-            start: 'top top+=5%',
-            pin: '.abt .image .animate_svg',
-            endTrigger:'.abt .wrap .textcard',
-            end: 'bottom center+=30%',       
-          })
-        }
+      if(window.innerWidth > 500) {
+        ScrollTrigger.create({
+          trigger: '.abt .image',
+          start: 'top top+=5%',
+          pin: '.abt .image .animate_svg',
+          endTrigger:'.abt .wrap .textcard',
+          end: 'bottom center+=30%',       
+        })
+      }
 
         
-    },[])
+    })
 
     return (
     <>

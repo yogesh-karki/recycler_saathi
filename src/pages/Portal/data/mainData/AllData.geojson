@@ -1,0 +1,901 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.33729,
+            27.66739
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.33801,
+            27.66922
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.35555,
+            27.67317
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.37387,
+            27.6933
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.36073,
+            27.76195
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.37928,
+            27.72716
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.38385,
+            27.73004
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.38556,
+            27.73485
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.3022,
+            27.69309
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.3006,
+            27.69386
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.30184,
+            27.69673
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.29966,
+            27.68833
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.31282,
+            27.69038
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.29912,
+            27.67799
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.29496,
+            27.67345
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.24369,
+            27.68675
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.30442,
+            27.73298
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.21889,
+            27.69287
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.54128,
+            27.90397
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.14177,
+            27.92622
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.06735,
+            27.75145
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.84457,
+            27.76906
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.80741,
+            27.79157
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.62349,
+            27.87205
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.56255,
+            27.85709
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.62558,
+            27.99342
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collection Partners",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.71876,
+            27.11788
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "PET recycling center",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            83.989145,
+            28.209514
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "PET recycling center",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            83.670385,
+            27.510475
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            81.617308,
+            28.060545
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            81.617949,
+            28.06132
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.303591,
+            27.678513
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.301371,
+            27.694743
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.326712,
+            27.68709
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.313196,
+            27.690719
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            83.466143,
+            27.705733
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            87.27757,
+            26.429552
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            87.278238,
+            26.667911
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            87.702807,
+            26.669869
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.033958,
+            27.433119
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.4096,
+            27.690274
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.337213,
+            27.724608
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.291472,
+            27.651508
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.319068,
+            27.712068
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.303591,
+            27.678513
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.371749,
+            27.687379
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Regional Office",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.381741,
+            27.676382
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.42682,
+            27.69461
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.43432,
+            27.68361
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.5043,
+            27.5806
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.3296,
+            27.571
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.31623,
+            27.70884
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Volunteer For Change",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.3312,
+            27.68472
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Musuem",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.493973,
+            27.574041
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.399276,
+            27.681443
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.414386,
+            27.685756
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.416056,
+            27.674048
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.434815,
+            27.657176
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.448315,
+            27.668678
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.503637,
+            27.597025
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.504261,
+            27.580645
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.329569,
+            27.571026
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.320048,
+            27.565754
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Waste Smart Schools",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.340574,
+            27.565618
+          ]
+        }
+      }
+    ]
+  }

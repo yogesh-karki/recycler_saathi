@@ -1,0 +1,243 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            81.617308,
+            28.060545
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            81.617949,
+            28.06132
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.303591,
+            27.678513
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.301371,
+            27.694743
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.326712,
+            27.68709
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.313196,
+            27.690719
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            83.466143,
+            27.705733
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            87.27757,
+            26.429552
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            87.278238,
+            26.667911
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            87.702807,
+            26.669869
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.033958,
+            27.433119
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            84.4096,
+            27.690274
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.337213,
+            27.724608
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.291472,
+            27.651508
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.319068,
+            27.712068
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.303591,
+            27.678513
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Organisational Network",
+          "icon": "image url"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            85.371749,
+            27.687379
+          ]
+        }
+      }
+    ]
+  }
