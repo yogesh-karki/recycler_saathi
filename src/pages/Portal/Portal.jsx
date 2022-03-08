@@ -1,6 +1,9 @@
 import React,{useRef, useState, useMemo, useEffect} from 'react'
 
-import Map from 'react-map-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import Map from 'react-map-gl'; 
+import 'mapbox-gl/dist/mapbox-gl.css';
+
+import mapboxgl from 'mapbox-gl';
 
 import  {Source, Layer, Marker } from 'react-map-gl';
 
@@ -9,21 +12,16 @@ import ProvinceLabel from './data/ProvinceLabel.geojson'
 import ProvinceMap from './data/ProvinceMap.json'
 import data from './data/mapData'
 
-import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 
 import './portal.scss'
 
+// The following is required to stop "npm build" from transpiling mapbox code.
+// notice the exclamation point in the import.
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const Portal = () => {
-
-  mapboxgl.accessToken = 'pk.eyJ1IjoieW9nZXNoa2Fya2kiLCJhIjoiY2txZXphNHNlMGNybDJ1cXVmeXFiZzB1eSJ9.A7dJUR4ppKJDKWZypF_0lA';
-
-  const mapContainer = useRef(null);
-  const map = useRef(null);
-  const [lng, setLng] = useState( 83.9835325);
-  const [lat, setLat] = useState(28.2434542);
-  const [zoom, setZoom] = useState(6.5);
-
 
   const pins = useMemo(
     () =>
@@ -46,15 +44,6 @@ const Portal = () => {
     []
   );
 
-  useEffect(() => {
-    if (map.current) return; // initialize map only once
-    map.current = new mapboxgl.Map({
-    container: mapContainer.current,
-    style: 'mapbox://styles/mapbox/streets-v11',
-    center: [lng, lat],
-    zoom: zoom
-    });
-    });
 
 
   const [viewport, setViewport] = useState({
@@ -82,21 +71,6 @@ const Portal = () => {
 
   }
 
-  const layerStyle = {
-    id: 'point',
-    type: 'circle',
-    paint: {
-      'circle-radius': 8,
-      'circle-color': '#10b5c9',
-      'circle-opacity': 0.8,
-      'circle-stroke-color': "#ffffff",
-      'circle-stroke-width': 2
-
-    }
-  };
-
-
-
   const mapStyleLine = {
     id: 'map_style',
     type: 'line',
@@ -112,9 +86,8 @@ const Portal = () => {
 
   return (
     <>
-
+      Run Map
       <div className="portal">
-        Run P
         <Map
           {...viewport}
           style={{width: '100vw', height: '100vh'}}
@@ -135,8 +108,6 @@ const Portal = () => {
           
         </Map>
       </div>
-
-      <div ref={mapContainer} className="map-container" />
     
 
  
