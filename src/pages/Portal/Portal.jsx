@@ -1,16 +1,21 @@
-import React,{useRef, useState, useMemo, useEffect} from 'react'
+import React,{useState, useEffect} from 'react'
 
 import Map from 'react-map-gl'; 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 import mapboxgl from 'mapbox-gl';
 
-import  {Source, Layer, Marker } from 'react-map-gl';
+import  {Source, Layer } from 'react-map-gl';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 import ProvinceLabel from './data/ProvinceLabel.geojson'
 import ProvinceMap from './data/ProvinceMap.json'
-import data from './data/mapData'
+
+
+
+import RecyclerSaathiData from './data/mainData/AllData.geojson'
+
+
 
 
 import './portal.scss'
@@ -23,33 +28,11 @@ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 
 const Portal = () => {
 
-  const pins = useMemo(
-    () =>
-    data.map((data, index) => {
-     
-    
-      return(
-        <Marker
-          key={`marker-${index}`}
-          longitude={data.longitude}
-          latitude={data.latitude}
-          anchor="bottom"
-        >
-        
-          <img src={data.img} className="pinImage" alt=""  onClick={() => console.log(data.description)}/>
-
-        </Marker>
-      )
-    }),
-    []
-  );
-
-
 
   const [viewport, setViewport] = useState({
     latitude: 28.2434542,
     longitude: 83.9835325,
-    minZoom: 6.5,
+    minZoom: 6.2,
     maxZoom: 20,
   });
 
@@ -61,14 +44,32 @@ const Portal = () => {
     id: "provinceLabel",
     type: 'symbol',
     layout: {
-      "text-allow-overlap": true,
+      "text-allow-overlap": false,
       'text-field': ['get', 'description'],
       'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
       'text-radial-offset': 0.5,
       'text-justify': 'auto',
-      "text-size": 14,
+      "text-size": 12,
+      "text-font": ["Open Sans Bold","Arial Unicode MS Bold"]
+      
+    },
+    paint: {
+      "text-color": "#0a405a"
     }
 
+  }
+
+  
+ 
+  
+
+  const dataStyle = {
+    id: 'dataStyle',
+    type: 'circle',
+    paint: {
+      'circle-radius': 10,
+      'circle-color': 'orange'
+    }
   }
 
   const mapStyleLine = {
@@ -78,15 +79,16 @@ const Portal = () => {
     },
     paint: {
         'line-color': "#0a405a",
-        'line-width': 1.5
+        'line-width': 1.5,
+        'line-dasharray': [2,1]
     },
     
   }
 
+ 
 
   return (
     <>
-      Run Map
       <div className="portal">
         <Map
           {...viewport}
@@ -103,9 +105,13 @@ const Portal = () => {
           <Source id="nepalMap" type='geojson' data={ProvinceMap}>
             <Layer {...mapStyleLine} />
           </Source>
-          
-          {pins}
-          
+
+          <Source id="vfcData" type="geojson" data={RecyclerSaathiData}>
+            <Layer {...dataStyle} 
+
+            />
+          </Source>
+
         </Map>
       </div>
     
