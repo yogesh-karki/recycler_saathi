@@ -18,7 +18,6 @@ import recyclerSaathiData from "./data/mainData/AllData.geojson";
 
 import {navData, dataStyle, provinceLabelStyle ,mapStyleLine} from './PortalStyle'
 
-import { CloseCircleOutlined } from '@ant-design/icons';
 
 import "./portal.scss";
 
@@ -29,64 +28,142 @@ import "./portal.scss";
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 const Portal = () => {
+    
+    
     const [viewport, setViewport] = useState({
         latitude: 28.2134542,
         longitude: 83.9835325,
         minZoom: 6.3,
         maxZoom: 20,
+       
     });
 
+    useEffect(() => {
+        if(window.innerWidth > 1600) {
+            setViewport({
+                latitude: 28.2134542,
+                longitude: 83.9835325,
+                minZoom: 6.7,
+                maxZoom: 20,
+            })
+        }
+    },[])
 
 
-
+    
 
     const MAPBOX_TOKEN = "pk.eyJ1IjoieW9nZXNoa2Fya2kiLCJhIjoiY2txZXphNHNlMGNybDJ1cXVmeXFiZzB1eSJ9.A7dJUR4ppKJDKWZypF_0lA";
 
     
     const [isExpand , setIsExpand] = useState(-1)  
-    const [filterData , setFilterData] = useState(null)  
+    const [showReset , setShowReset] = useState(null)  
+    const [filterStyle , setFilterStyle] = useState(dataStyle) 
 
     const navClick = (index, title) => {
-      setIsExpand(index)
-      setFilterData(title)
+        setIsExpand(index)
+
+        const dataStyleFilter = {
+            id: "dataStyle",
+            type: "circle",
+            filter: ['==', 'title', `${title}`],
+            paint: {
+                "circle-radius": 10,
+                "circle-stroke-width": 2,
+                "circle-color": [
+                    "match",
+                    ["get", "title"],
+                    "Organisational Network",
+                    "#EA5C2B",
+                    "PET recycling center",
+                    "#D9CE3F",
+                    "Regional Office",
+                    "#10b5c9",
+                    "Volunteer For Change",
+                    "#573391",
+                    "Collection Partners",
+                    "#EF6D6D ",
+                    "Waste Smart Schools",
+                    "#219F94",
+                    "Waste Smart Musuem",
+                    "red",
+                    /* other */ "#BD1E1E",
+                ],
+            },
+        };
+
+        setFilterStyle(dataStyleFilter)
+ 
+        setShowReset(1)
     }
 
+    const resetData = () => {
+        setIsExpand(-1)
+
+        const dataStyleFilter = {
+            id: "dataStyle",
+            type: "circle",
+            paint: {
+                "circle-radius": 10,
+                "circle-stroke-width": 2,
+                "circle-color": [
+                    "match",
+                    ["get", "title"],
+                    "Organisational Network",
+                    "#EA5C2B",
+                    "PET recycling center",
+                    "#D9CE3F",
+                    "Regional Office",
+                    "#10b5c9",
+                    "Volunteer For Change",
+                    "#573391",
+                    "Collection Partners",
+                    "#EF6D6D ",
+                    "Waste Smart Schools",
+                    "#219F94",
+                    "Waste Smart Musuem",
+                    "red",
+                    /* other */ "#BD1E1E",
+                ],
+            },
+        };
+
+        setFilterStyle(dataStyleFilter)
+
+        setViewport({
+            latitude: 28.2134542,
+            longitude: 83.9835325,
+            minZoom: 6.3,
+            maxZoom: 20,
+           
+        })
+
+        setShowReset(null)
+    }   
+
+    let ResetDiv = () => {
+        return(
+            <div className="reset_data" onClick={resetData}>
+                Reset Data
+            </div>
+        )
+    }
+
+    
 
 
-    const dataStyleFilter = {
-      id: "dataStyleFilter",
-      type: "circle",
-      filter: ['==', 'title', `${filterData}`],
-      paint: {
-          "circle-radius": 10,
-          "circle-stroke-width": 2,
-          "circle-color": [
-              "match",
-              ["get", "title"],
-              "Organisational Network",
-              "#EA5C2B",
-              "PET recycling center",
-              "#D9CE3F",
-              "Regional Office",
-              "#10b5c9",
-              "Volunteer For Change",
-              "#573391",
-              "Collection Partners",
-              "#EF6D6D ",
-              "Waste Smart Schools",
-              "#219F94",
-              "Waste Smart Musuem",
-              "red",
-              /* other */ "#BD1E1E",
-          ],
-      },
-  };
+    
+
+    
 
     return (
         <>
             <div className="portal">
 
+
                 <div className="legend_click">
+                    {
+                        showReset ? <ResetDiv /> : "" 
+                    }
                     {
                       navData.map((val, index) => {
                         return (
@@ -115,9 +192,7 @@ const Portal = () => {
                     </Source>
 
                     <Source id="allData" type="geojson" data={recyclerSaathiData}>
-                      {
-                        filterData ? <Layer id="layer1" {...dataStyleFilter} /> : <Layer id="layer2" {...dataStyle} />
-                      }
+                       <Layer {...filterStyle} />
                     </Source>
 
                  
