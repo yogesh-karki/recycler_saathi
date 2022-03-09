@@ -12,6 +12,21 @@
         display: flex;
         width: 100%;
 
+        .reset_data {
+            display: block;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            background-color: #10b5c9;
+            z-index: 3;
+            font-size: 15px;
+            padding: 8px 15px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
         .card {
             flex: 1 1;
             padding: 20px 15px;
@@ -27,20 +42,10 @@
                 }
             }
 
-            .close_btn {
-                display: none;
-            }
+          
 
             &.expand {
-                .close_btn {
-                    display: block;
-                    position: absolute;
-                    top: -20%;
-                    right: 0;
-                    color: #fff;
-                    z-index: 3;
-                    font-size: 25px;
-                }
+                
 
                 .border {
                     height: 120%;
