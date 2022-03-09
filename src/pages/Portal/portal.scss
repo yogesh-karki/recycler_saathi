@@ -1,6 +1,83 @@
 .portal {
     width: 100%;
+    height: calc(100vh - 62px);
     overflow: hidden;
+    position: relative;
+
+    .legend_click {
+        position: absolute;
+        bottom: 0px;
+        z-index: 3;
+        background: #fff;
+        display: flex;
+        width: 100%;
+
+        .card {
+            flex: 1 1;
+            padding: 20px 15px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            cursor: pointer;
+            align-items: center;
+
+            &:hover {
+                .border {
+                    height: 30%;
+                }
+            }
+
+            &.expand {
+                .border {
+                    height: 120%;
+                    // top: -20px;
+                    // bottom: auto;
+                }
+
+                .num h3, .desc h4, .desc h5 {
+                    color: #fff;
+                }
+            }
+
+            .border {
+                position: absolute;
+                width: 100%;
+                height: 10px;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+                transition: 0.5s;
+
+                
+            }
+
+            .num {
+                width: 30%;
+                position: relative;
+                z-index: 2;
+
+                h3 {
+                    font-family: "Roboto Mono", monospace;
+                    font-weight: 800;
+                    font-size: 32px;
+                    line-height: 1;
+                }
+            }
+
+            .desc {
+                width: 70%;
+                position: relative;
+                z-index: 2;
+
+                h4 {
+                    max-width: 85px;
+                    line-height: 1.3;
+                }
+            }
+
+        }
+    }
+
 }
 
 .pinImage {
