@@ -1,6 +1,7 @@
 import React,{useEffect, useRef} from 'react'
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import BannerHalf from '../../components/Banner/BannerHalf'
 
 gsap.registerPlugin(ScrollTrigger); 
 
@@ -158,7 +159,7 @@ const introData = [
     
 ]
 
-const PlasticIntroduction = () => {
+const AboutPlastics = () => {
     const headerRefs = useRef([])
     headerRefs.current = [];
 
@@ -192,15 +193,20 @@ const PlasticIntroduction = () => {
 
   return (
     <>
-        
-        <section className='banner banner_half' style={{background: 'url(./images/plastic_introduction.jpg)' }}>
+        <BannerHalf 
+            image='url(./images/plastic_introduction.jpg)'
+            subtitle="Plastic"
+            title="<h3>Introduction of <strong>Plastics</strong> </h3>"
+        />
+
+        {/* <section className='banner banner_half' style={{background: 'url(./images/plastic_introduction.jpg)' }}>
             <div className="container">
                 <div className="text">
                     <h6>Plastic</h6>
                     <h3>Introduction of <strong>Plastics</strong> </h3>
                 </div>
             </div>
-        </section>
+        </section> */}
 
 
         <section className="plastic_intro">
@@ -231,4 +237,4 @@ const PlasticIntroduction = () => {
   )
 }
 
-export default PlasticIntroduction
+export default AboutPlastics

@@ -24,11 +24,24 @@ const Header = () => {
                       <a href='#'>plastic</a>
 
                       <div className="sub_menu">
-                        <NavLink  to='/about_plastic'>About Plastic</NavLink>
-                        <NavLink  to='/plastic_introduction'>Plastic Introduction</NavLink>
+                        <div className="sm_wrap">
+                          <NavLink  to='/about_plastics'>About Plastics</NavLink>
+                          <NavLink  to='/plastic_industry'>Plastic Industry</NavLink>
+                          <NavLink  to='/world_without_waste_vision'>World Without Waste Vision</NavLink>
+                        </div>
                       </div>
                     </li>
-                    <li><NavLink  to='/problems'>problems</NavLink> </li>
+                    <li className='has_dropdown'>
+                      <a href="#">problems</a>
+                      <div className="sub_menu">
+                        <div className="sm_wrap">
+                          <NavLink  to='/plastic_introduction'>Global Problems</NavLink>
+                          <NavLink  to='/about_plastic'>Regional Problems</NavLink>
+                          <NavLink  to='/about_plastic'>National Problems</NavLink>
+                        </div>
+                      </div>
+                    </li>
+                    <li><NavLink  to='/problems'>solution</NavLink> </li>
                     <li><NavLink  to='/updates'>updates</NavLink> </li>
                     {/* <li><NavLink activeClassName="active_class" to='/faq'>faqs</NavLink></li>
                     <li><NavLink activeClassName="active_class" to='/world_without_waste_vision'>World without waste vision</NavLink></li>
@@ -43,8 +56,8 @@ const Header = () => {
             <div className="secondary">
               <nav>
                 <ul>
-                  <li><NavLink  to='/updates'>careers</NavLink> </li>
                   <li><NavLink  to='about'>About Us</NavLink></li>
+                  <li><NavLink  to='/updates'>careers</NavLink> </li>
                   <li><NavLink to='/portal' className='portal_btn'>Portal</NavLink></li>
                 </ul>
               </nav>

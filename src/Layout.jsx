@@ -11,7 +11,9 @@ import Team from './pages/Team/Team';
 import { News } from './pages/News/News';
 import NewsDetail from './pages/News/NewsDetail';
 import Portal from './pages/Portal/Portal';
-import PlasticIntroduction from './pages/About/PlasticIntroduction';
+import AboutPlastics from './pages/About/AboutPlastics';
+import PlasticIndustry from './pages/About/PlasticIndustry';
+import WWWV from './pages/About/WWWV';
 
 const Layout = () => {
 
@@ -21,8 +23,10 @@ const Layout = () => {
           <Routes>
             <Route path='/' element={<Home  />} />
             <Route path='/about' element={<About  />} />
-            <Route path='/plastic_introduction' element={<PlasticIntroduction  />} />
+            <Route path='/about_plastics' element={<AboutPlastics />} />
             <Route path='/plastic_recycling' element={<PlasticRecycling/> } />
+            <Route path='/plastic_industry' element={<PlasticIndustry/> } />
+            <Route path='/world_without_waste_vision' element={<WWWV/> } />
             <Route path='/faq' element={<Faq/> } />
             <Route path='/team' element={<Team/> } />
             <Route path='/news' element={<News/> } />

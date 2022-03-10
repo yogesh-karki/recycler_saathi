@@ -9,7 +9,7 @@ const NepalMap = () => {
     const [toolTip, setToolTip] = useState(0)
 
     useEffect(() => {
-        gsap.to('.nepal_map .animate',{scale: 1.75,duration: 1.8,x: -10,y: -12,ease: "none",yoyo: true,repeat: -1})
+        gsap.to('.nepal_map .animate',{scale: 1.72,duration: 1.3,x: -18,y: -17,ease: "none",yoyo: true,repeat: -1})
 
         const city = document.querySelectorAll('.city');
 
@@ -25,7 +25,7 @@ const NepalMap = () => {
             })
         })
     
-    })
+    },[])
 
     return (
         <>
@@ -45,39 +45,39 @@ const NepalMap = () => {
                 <path className="pr_line" d="M293.378 131.374C297.605 127.714 301.278 131.026 304.545 132.578C307.816 134.132 310.44 137.194 306.507 141.206C304.983 142.76 305.901 154.139 307.395 155.569C310.883 158.904 317.716 157.396 319.907 152.508C320.717 150.703 320.723 149.084 323.401 148.861C329.39 148.361 335.289 147.199 341.16 145.792C344.801 144.919 350.094 143.598 351.922 146.989C354.948 152.601 359.057 153.122 364.101 152.386C369.478 151.602 371.296 155.302 369.944 158.741C367.809 164.169 370.651 172.766 361.24 174.282C359.765 174.52 359.133 176.343 358.902 177.893C357.76 185.567 353.603 192.318 352.005 199.776C350.348 207.514 354.284 219.021 366.165 217.483C369.557 217.044 370.831 218.832 371.609 221.505C372.754 225.438 371.816 229.285 370.236 232.785C368.51 236.61 368.24 239.718 370.645 243.557C373.99 248.895 370.409 259.553 365.116 261.892C365.115 261.892 365.114 261.893 365.113 261.893C365.634 262.376 366.154 262.86 366.674 263.343C369.938 263.942 372.135 262.741 372.778 259.414C373.507 255.639 375.543 251.261 374.368 248.141C371.306 240.012 374.186 232.633 375.057 224.891C375.786 218.418 372.055 214.405 366.693 214.474C357.377 214.595 352.257 207.626 355.132 198.844C357.115 192.787 360.587 187.233 361.047 180.646C361.226 178.07 362.781 176.286 365.587 176.115C368.093 175.963 369.518 174.614 370.059 172.269C371.064 167.914 372.309 163.586 372.934 159.175C374.134 150.696 372.74 149.148 364.138 149.762C359.904 150.065 356.626 149.619 354.796 145.25C353.702 142.641 351.855 142.264 348.747 142.161C339.723 141.864 331.424 145.304 322.661 146.085C319.759 146.344 316.732 146.924 316.794 151.326C316.825 153.594 314.951 154.97 312.224 154.324C309.917 153.778 309.79 152.657 309.608 150.354C309.305 146.538 307.503 142.871 311.126 139.589C311.634 139.129 311.28 137.513 311.062 136.488C309.763 130.401 300.435 125.296 294.504 127.504C292.908 128.098 291.269 129.599 289.743 128.312C284.662 124.023 277.734 123.895 272.382 120.308H272.381C271.536 120.679 270.691 121.049 269.845 121.421C275.407 126.795 283.621 126.923 289.678 131.396C290.502 132.007 292.644 132.011 293.378 131.374Z" fill="#FAFAFA"/>
                 
                 <g className="city" id="Nepaljung">
-                    <circle r="11" transform="matrix(1 0 0 -1 166 384)" fill="#D87819"/>
-                    <circle className="animate" opacity="0.3" cx="166" cy="384" r="16" fill="#D87819"/>
+                    <circle r="16" transform="matrix(1 0 0 -1 166 384)" fill="#D87819"/>
+                    <circle className="animate" opacity="0.3" cx="166" cy="384" r="25" fill="#D87819"/>
                 </g>
                 
                 <g className="city" id="Kapilvastu">
-                    <circle r="11" transform="matrix(1 0 0 -1 446 555)" fill="#D87819"/>
-                    <circle className="animate" opacity="0.3" cx="446" cy="555" r="16" fill="#D87819"/>
+                    <circle r="16" transform="matrix(1 0 0 -1 446 555)" fill="#D87819"/>
+                    <circle className="animate" opacity="0.3" cx="446" cy="555" r="25" fill="#D87819"/>
                 </g>
 
                 <g className="city" id="Pokhara">
-                    <circle r="11" transform="matrix(1 0 0 -1 746 495)" fill="#D87819"/>
-                    <circle className="animate" opacity="0.3" cx="746" cy="495" r="16" fill="#D87819"/>
+                    <circle r="16" transform="matrix(1 0 0 -1 746 495)" fill="#D87819"/>
+                    <circle className="animate" opacity="0.3" cx="746" cy="495" r="25" fill="#D87819"/>
                 </g>
 
                 <g className="city" id="Chitwan">
-                    <circle r="11" transform="matrix(1 0 0 -1 919 652)" fill="#D87819"/>
-                    <circle className="animate" opacity="0.3" cx="919" cy="652" r="16" fill="#D87819"/>
+                    <circle r="16" transform="matrix(1 0 0 -1 919 652)" fill="#D87819"/>
+                    <circle className="animate" opacity="0.3" cx="919" cy="652" r="25" fill="#D87819"/>
                 </g>
 
                 <g className="city" id="Kathmandu">
-                    <circle r="11" transform="matrix(1 0 0 -1 1079 642)" fill="#D87819"/>
-                    <circle className="animate" opacity="0.3" cx="1079" cy="642" r="16" fill="#D87819"/>
+                    <circle r="16" transform="matrix(1 0 0 -1 1079 642)" fill="#D87819"/>
+                    <circle className="animate" opacity="0.3" cx="1079" cy="642" r="25" fill="#D87819"/>
                 </g>
 
                 <g className="city" id="Birjung">
-                    <circle r="11" transform="matrix(1 0 0 -1 959 762)" fill="#D87819"/>
-                    <circle className="animate" opacity="0.3" cx="959" cy="762" r="16" fill="#D87819"/> 
+                    <circle r="16" transform="matrix(1 0 0 -1 959 762)" fill="#D87819"/>
+                    <circle className="animate" opacity="0.3" cx="959" cy="762" r="25" fill="#D87819"/> 
                 </g>
 
                 <g className="city" id="Jankapur">
                     
-                    <circle r="11" transform="matrix(1 0 0 -1 1399 862)" fill="#D87819"/>
-                    <circle className="animate" opacity="0.3" cx="1399" cy="862" r="16" fill="#D87819"/>                    
+                    <circle r="16" transform="matrix(1 0 0 -1 1399 862)" fill="#D87819"/>
+                    <circle className="animate" opacity="0.3" cx="1399" cy="862" r="15" fill="#D87819"/>                    
                 </g>
             </svg>
             
