@@ -35,9 +35,9 @@ const Header = () => {
                       <a href="#">problems</a>
                       <div className="sub_menu">
                         <div className="sm_wrap">
-                          <NavLink  to='/plastic_introduction'>Global Problems</NavLink>
-                          <NavLink  to='/about_plastic'>Regional Problems</NavLink>
-                          <NavLink  to='/about_plastic'>National Problems</NavLink>
+                          <NavLink  to='/global_problems'>Global Problems</NavLink>
+                          <NavLink  to='/regional_problems'>Regional Problems</NavLink>
+                          <NavLink  to='/national_problems'>National Problems</NavLink>
                         </div>
                       </div>
                     </li>

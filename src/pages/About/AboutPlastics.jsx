@@ -5,6 +5,40 @@ import BannerHalf from '../../components/Banner/BannerHalf'
 
 gsap.registerPlugin(ScrollTrigger); 
 
+
+const deleteThis = `
+<h4>Invention of the Precursors </h4>
+<p><strong>1839 - 1856</strong>Natural Rubber, Vulcanite, Gutta- Percha, Shellac, and Bois Durci.   </p> 
+
+<h4>Beginning of the Plastic Era with Semi-Synthetics </h4>
+<p><strong>1839 - 1894</strong>Polystyrene or PS, Parkesine, Cellulose Nitrate or Celluloid, Polyvinyl Chloride or PVC, Viscose Rayon. </p>
+
+<h4>Thermosetting Plastics and Thermoplastics </h4>
+<p><strong>1908-1939</strong>Cellophane, Phenol-Formaldehyde (trade name Bakelite), Vinyl or PVC, Ployvinylidene chloride or Saran, also called PVDC, Low-density polyethylene or LDPE, Acrylic or Polymethyl Methacrylate, Polyurethanes (trade name Igamid for plastic materials and Perlon for fibers), Polystyrene, Polytetrafluorethylene or PRFE (trade name Teflon), Nylon and Neoprene 	 </p> 
+
+<h4>Polyethylene Terephthalate or Pet</h4>
+<p><strong>1941- 1985</strong>Polyethylene Terephthalate or Pet, Low-Density Polyethylene, Unsaturated Polyester PET, High-density polyethylene or HDPE (trade name Marlex), Polypropylene or PP, Saran Wrap, Styrofoam, Polyimide, Thermoplastic Polyester, Linear Low-Density Polyethylene, Liquid Crystal Polymers  </p>
+
+
+`
+
+const PlasticDevelopment = () => {
+    return(
+        <div className="p_dev">
+            <div className="tl">
+                <div className="date">
+                    <h4>1839 - 56</h4>
+                </div>
+
+                <div className="desc">
+                    <h5>INVENTION OF THE PRECURSORS</h5>
+                    <p>Natural Rubber, Vulcanite, Gutta- Percha, Shellac, and Bois Durci.</p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 const introData = [
     {
         title: '<h3><strong>History of </strong>Plastics </h3>',
@@ -67,21 +101,20 @@ const introData = [
     {
         title: '<h3><strong>Development of</strong> Plastics </h3>',
         subtitle: 'A brief timeline ',
-        content: `
-                    <h4>Invention of the Precursors </h4>
+        content: ` <h4>Invention of the Precursors </h4>
                     <p><strong>1839 - 1856</strong>Natural Rubber, Vulcanite, Gutta- Percha, Shellac, and Bois Durci.   </p> 
-
+                    
                     <h4>Beginning of the Plastic Era with Semi-Synthetics </h4>
                     <p><strong>1839 - 1894</strong>Polystyrene or PS, Parkesine, Cellulose Nitrate or Celluloid, Polyvinyl Chloride or PVC, Viscose Rayon. </p>
-
+                    
                     <h4>Thermosetting Plastics and Thermoplastics </h4>
                     <p><strong>1908-1939</strong>Cellophane, Phenol-Formaldehyde (trade name Bakelite), Vinyl or PVC, Ployvinylidene chloride or Saran, also called PVDC, Low-density polyethylene or LDPE, Acrylic or Polymethyl Methacrylate, Polyurethanes (trade name Igamid for plastic materials and Perlon for fibers), Polystyrene, Polytetrafluorethylene or PRFE (trade name Teflon), Nylon and Neoprene 	 </p> 
-
+                    
                     <h4>Polyethylene Terephthalate or Pet</h4>
                     <p><strong>1941- 1985</strong>Polyethylene Terephthalate or Pet, Low-Density Polyethylene, Unsaturated Polyester PET, High-density polyethylene or HDPE (trade name Marlex), Polypropylene or PP, Saran Wrap, Styrofoam, Polyimide, Thermoplastic Polyester, Linear Low-Density Polyethylene, Liquid Crystal Polymers  </p>
+                    
 
-
-                `,
+        ` ,
 
     },
     {
@@ -199,18 +232,13 @@ const AboutPlastics = () => {
             title="<h3>Introduction of <strong>Plastics</strong> </h3>"
         />
 
-        {/* <section className='banner banner_half' style={{background: 'url(./images/plastic_introduction.jpg)' }}>
-            <div className="container">
-                <div className="text">
-                    <h6>Plastic</h6>
-                    <h3>Introduction of <strong>Plastics</strong> </h3>
-                </div>
-            </div>
-        </section> */}
+     
+      
 
 
         <section className="plastic_intro">
             
+
             {
                 introData.map((val,index) => {
                     return(
@@ -223,7 +251,8 @@ const AboutPlastics = () => {
                                     </div>
 
                                     <div className="content">
-                                    <article dangerouslySetInnerHTML={{ __html: val.content }} ></article>
+                                        
+                                        {val.contentDifferent ? val.contentDifferent : <article dangerouslySetInnerHTML={{ __html: val.content }} ></article>  }
                                     </div>
                                 </div>
                             </div>

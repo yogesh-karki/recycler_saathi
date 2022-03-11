@@ -14,6 +14,9 @@ import Portal from './pages/Portal/Portal';
 import AboutPlastics from './pages/About/AboutPlastics';
 import PlasticIndustry from './pages/About/PlasticIndustry';
 import WWWV from './pages/About/WWWV';
+import GlobalProblems from './pages/Problems/GlobalProblems';
+import RegionalProblems from './pages/Problems/RegionalProblems';
+import NationalProblems from './pages/Problems/NationalProblems';
 
 const Layout = () => {
 
@@ -32,6 +35,10 @@ const Layout = () => {
             <Route path='/news' element={<News/> } />
             <Route path='/newsDetail' element={<NewsDetail/> } />
             <Route path='/portal' element={<Portal/> } />
+            <Route path='/global_problems' element={<GlobalProblems/> } />
+            <Route path='/regional_problems' element={<RegionalProblems/> } />
+            <Route path='/national_problems' element={<NationalProblems/> } />
+
          
           </Routes>
 

@@ -1,8 +1,7 @@
 import React from 'react'
 import HomeAbout from  './HomeAbout';
 
-import Objective from '../../components/Objective';
-import OurImpacts from './OurImpacts';
+
 import ImapctSlider from '../../components/ImapctSlider';
 import './home.scss'
 import ImpactGrow from './ImpactGrow';
@@ -17,7 +16,7 @@ const Home = () => {
     <>
       <section className="banner">
         <video className='videoTag' autoPlay loop muted>
-            <source src="./images/video/banner.mp4" type='video/mp4' />
+            <source src="./images/video/Life of a Plastic Bottle_1 (1).mp4" type='video/mp4' />
         </video>
 
         <div className="container">
