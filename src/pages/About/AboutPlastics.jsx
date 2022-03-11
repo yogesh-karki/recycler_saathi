@@ -6,36 +6,88 @@ import BannerHalf from '../../components/Banner/BannerHalf'
 gsap.registerPlugin(ScrollTrigger); 
 
 
-const deleteThis = `
-<h4>Invention of the Precursors </h4>
-<p><strong>1839 - 1856</strong>Natural Rubber, Vulcanite, Gutta- Percha, Shellac, and Bois Durci.   </p> 
+const PlasticClassification = () => {
+    const pcData = [
+        {
+            icon: "./images/plastic/1.svg",
+            subtitle: "RESIN CODE 1",
+            title: "PETE (Polyethylene Terephthalate)",
+            description: "PETE is lightweight and can withstand huge temperatures.  It is used in Polyester fibers or Polar Fleece, Thermoformed sheet, Strapping, Soft drink bottles, Tote bags, Furniture, Carpet, Paneling, and new containers.",
+            image: "./images/plastic/icon1.svg"
+        },
+        {
+            icon: "./images/plastic/2.svg",
+            subtitle: "RESIN CODE 2",
+            title: "HDPE (High-Density Polyethylene)",
+            description: "HDPE is long-lasting and used in Bottles, Grocery bags, Milk jugs, Recycling bins, Agricultural pipe, Base cups, Car stops, Playground equipment, and Plastic lumber.",
+            image: "./images/plastic/icon2.svg"
+        },
+        {
+            icon: "./images/plastic/3.svg",
+            subtitle: "RESIN CODE 3",
+            title: "PVC (Polyvinyl Chloride)",
+            description: "PVC has high resistance to grease, oils, and chemicals. It is used in Pipe, Window profile, Siding, Fencing, Flooring, Shower curtains, Lawn chairs, Non-food bottles, Children’s toys.",
+            image: "./images/plastic/icon3.svg"
+        },
+        {
+            icon: "./images/plastic/4.svg",
+            subtitle: "RESIN CODE 4",
+            title: "LDPE (Low-density Polyethylene)",
+            description: "LDP plastics are safe, flexible, and durable. It is used in Plastic bags, six pack rings, Various containers, Dispensing bottles, Wash bottles, Tubing, and various moulded laboratory equipment.",
+            image: "./images/plastic/icon4.svg"
+        },
+        {
+            icon: "./images/plastic/5.svg",
+            subtitle: "RESIN CODE 5",
+            title: "PP (Polypropylene)",
+            description: "PP is used in Auto parts, Industrial Fibers, Food containers, and Dishware. It is also used to make medicinal bottles and is safe, durable, and lightweight.",
+            image: "./images/plastic/icon5.svg"
+        },
+        {
+            icon: "./images/plastic/6.svg",
+            subtitle: "RESIN CODE 6",
+            title: "PS (Polystyrene)",
+            description: "PS, a cheap and single-use plastic, is used in Desk accessories, Cafeteria trays, Plastic utensils, Toys, Video cassettes and cases, Clamshell containers, Packaging peanuts, insulation board, and other expanded polystyrene products (e.g.styrofoam).",
+            image: "./images/plastic/icon6.svg"
+        },
+        {
+            icon: "./images/plastic/7.svg",
+            subtitle: "RESIN CODE 7",
+            title: "OTHER OR O (Other Plastics)",
+            description: "Other or O usually fall into RIN code 1 to 6 groups. Their properties depend upon the resin combination. Because of this, some can be recycled while others may not. It is used in Acrylic, Nylon, Polycarbonate, and polylactic acid (a bioplastic), and Multilayer combination of different plastics.",
+            image: "./images/plastic/icon7.svg"
+        },
 
-<h4>Beginning of the Plastic Era with Semi-Synthetics </h4>
-<p><strong>1839 - 1894</strong>Polystyrene or PS, Parkesine, Cellulose Nitrate or Celluloid, Polyvinyl Chloride or PVC, Viscose Rayon. </p>
+    ]
 
-<h4>Thermosetting Plastics and Thermoplastics </h4>
-<p><strong>1908-1939</strong>Cellophane, Phenol-Formaldehyde (trade name Bakelite), Vinyl or PVC, Ployvinylidene chloride or Saran, also called PVDC, Low-density polyethylene or LDPE, Acrylic or Polymethyl Methacrylate, Polyurethanes (trade name Igamid for plastic materials and Perlon for fibers), Polystyrene, Polytetrafluorethylene or PRFE (trade name Teflon), Nylon and Neoprene 	 </p> 
-
-<h4>Polyethylene Terephthalate or Pet</h4>
-<p><strong>1941- 1985</strong>Polyethylene Terephthalate or Pet, Low-Density Polyethylene, Unsaturated Polyester PET, High-density polyethylene or HDPE (trade name Marlex), Polypropylene or PP, Saran Wrap, Styrofoam, Polyimide, Thermoplastic Polyester, Linear Low-Density Polyethylene, Liquid Crystal Polymers  </p>
-
-
-`
-
-const PlasticDevelopment = () => {
     return(
-        <div className="p_dev">
-            <div className="tl">
-                <div className="date">
-                    <h4>1839 - 56</h4>
-                </div>
+        <>
+            <div className="pc_wrap">
+                {
+                    pcData.map((val,index) => {
+                        return(
+                            <div className="pc_card" key={index}>
+                                <div className="pc_head">
+                                    <img src={val.icon} alt="" />
 
-                <div className="desc">
-                    <h5>INVENTION OF THE PRECURSORS</h5>
-                    <p>Natural Rubber, Vulcanite, Gutta- Percha, Shellac, and Bois Durci.</p>
-                </div>
+                                    <div className="title">
+                                        <h5>{val.subtitle}</h5>
+                                        <h4>{val.title}</h4>
+                                        <p>{val.description}</p>
+                                    </div>
+                                </div>
+
+                    
+
+                                <img className='pl_product' src={val.image} alt="" />
+                            </div>
+                        )
+                    })
+                }
+
+                
             </div>
-        </div>
+        </>
     )
 }
 
@@ -120,39 +172,40 @@ const introData = [
     {
         title: '<h3><strong>Classifying </strong> Plastics </h3>',
         subtitle: 'Resin Identification Number (RIN) ',
-        content: `
-                <p>
-                    There are seven Resin Identification Number (RIN) also known as Resin Code. It originated from the Society of Plastics Industry (SPI) back in 1988. However, it was only administered in 2008 and has been placed on almost every piece of plastic around the globe. Each plastic product has its own RIN which indicates the bonding structure of the molecules after being polymerized. Each resin is identified to a Resin Identification Number. For example, RIN 1 is Poly (ethylene terephthalate), RIN 2 is Hight Density Polyethylene, RIN 3 is Poly (vinyl chloride), RIN 4 is Low density polyethylene, RIN 5 is Polypropylene, RIN 6 is Polystyrene, and RIN 7 is other resins. Within the UK, codes 1, 2, 5 and 6 can usually be recycled, whereas codes 3, 4, and 7 are usually not recycled. Following is a summary of the seven different plastic resin with examples:  
-                </p>
+        contentDifferent: <PlasticClassification />
+        // content: `
+        //         <p>
+        //             There are seven Resin Identification Number (RIN) also known as Resin Code. It originated from the Society of Plastics Industry (SPI) back in 1988. However, it was only administered in 2008 and has been placed on almost every piece of plastic around the globe. Each plastic product has its own RIN which indicates the bonding structure of the molecules after being polymerized. Each resin is identified to a Resin Identification Number. For example, RIN 1 is Poly (ethylene terephthalate), RIN 2 is Hight Density Polyethylene, RIN 3 is Poly (vinyl chloride), RIN 4 is Low density polyethylene, RIN 5 is Polypropylene, RIN 6 is Polystyrene, and RIN 7 is other resins. Within the UK, codes 1, 2, 5 and 6 can usually be recycled, whereas codes 3, 4, and 7 are usually not recycled. Following is a summary of the seven different plastic resin with examples:  
+        //         </p>
 
-                <h4>Resin Code 1 </h4>
-                <p><strong>PETE (Polyethylene Terephthalate) </strong> PETE is lightweight and can withstand huge temperatures.  It is used in Polyester fibers or Polar Fleece, Thermoformed sheet, Strapping, Soft drink bottles, Tote bags, Furniture, Carpet, Paneling, and new containers.</p>
-                <img src="" alt="" />
+        //         <h4>Resin Code 1 </h4>
+        //         <p><strong>PETE (Polyethylene Terephthalate) </strong> PETE is lightweight and can withstand huge temperatures.  It is used in Polyester fibers or Polar Fleece, Thermoformed sheet, Strapping, Soft drink bottles, Tote bags, Furniture, Carpet, Paneling, and new containers.</p>
+        //         <img src="" alt="" />
 
-                <h4>Resin Code 2 </h4>
-                <p><strong>HDPE (High-Density Polyethylene) </strong> HDPE is long-lasting and used in Bottles, Grocery bags, Milk jugs, Recycling bins, Agricultural pipe, Base cups, Car stops, Playground equipment, and Plastic lumber.</p>
-                <img src="" alt="" />
+        //         <h4>Resin Code 2 </h4>
+        //         <p><strong>HDPE (High-Density Polyethylene) </strong> HDPE is long-lasting and used in Bottles, Grocery bags, Milk jugs, Recycling bins, Agricultural pipe, Base cups, Car stops, Playground equipment, and Plastic lumber.</p>
+        //         <img src="" alt="" />
 
-                <h4>Resin Code 3</h4>
-                <p><strong>PVC (Polyvinyl Chloride) </strong> PVC has high resistance to grease, oils, and chemicals. It is used in Pipe, Window profile, Siding, Fencing, Flooring, Shower curtains, Lawn chairs, Non-food bottles, Children’s toys.  </p>
-                <img src="" alt="" />
+        //         <h4>Resin Code 3</h4>
+        //         <p><strong>PVC (Polyvinyl Chloride) </strong> PVC has high resistance to grease, oils, and chemicals. It is used in Pipe, Window profile, Siding, Fencing, Flooring, Shower curtains, Lawn chairs, Non-food bottles, Children’s toys.  </p>
+        //         <img src="" alt="" />
 
-                <h4>Resin Code 4 </h4>
-                <p><strong>LDPE (Low-density Polyethylene) </strong> LDP plastics are safe, flexible, and durable. It is used in Plastic bags, six pack rings, Various containers, Dispensing bottles, Wash bottles, Tubing, and various moulded laboratory equipment.  </p>
-                <img src="" alt="" />
+        //         <h4>Resin Code 4 </h4>
+        //         <p><strong>LDPE (Low-density Polyethylene) </strong> LDP plastics are safe, flexible, and durable. It is used in Plastic bags, six pack rings, Various containers, Dispensing bottles, Wash bottles, Tubing, and various moulded laboratory equipment.  </p>
+        //         <img src="" alt="" />
 
-                <h4>Resin Code 5</h4>
-                <p><strong>PP (Polypropylene) </strong> PP is used in Auto parts, Industrial Fibers, Food containers, and Dishware. It is also used to make medicinal bottles and is safe, durable, and lightweight.  </p>
-                <img src="" alt="" />
+        //         <h4>Resin Code 5</h4>
+        //         <p><strong>PP (Polypropylene) </strong> PP is used in Auto parts, Industrial Fibers, Food containers, and Dishware. It is also used to make medicinal bottles and is safe, durable, and lightweight.  </p>
+        //         <img src="" alt="" />
 
-                <h4>Resin Code 6 </h4>
-                <p><strong>PS (Polystyrene) </strong> PS, a cheap and single-use plastic, is used in Desk accessories, Cafeteria trays, Plastic utensils, Toys, Video cassettes and cases, Clamshell containers, Packaging peanuts, insulation board, and other expanded polystyrene products (e.g.styrofoam).  </p>
-                <img src="" alt="" />
+        //         <h4>Resin Code 6 </h4>
+        //         <p><strong>PS (Polystyrene) </strong> PS, a cheap and single-use plastic, is used in Desk accessories, Cafeteria trays, Plastic utensils, Toys, Video cassettes and cases, Clamshell containers, Packaging peanuts, insulation board, and other expanded polystyrene products (e.g.styrofoam).  </p>
+        //         <img src="" alt="" />
 
-                <h4>Resin Code 7 </h4>
-                <p><strong>OTHER OR O (Other Plastics) </strong> Other or O usually fall into RIN code 1 to 6 groups. Their properties depend upon the resin combination. Because of this, some can be recycled while others may not. It is used in Acrylic, Nylon, Polycarbonate, and polylactic acid (a bioplastic), and Multilayer combination of different plastics.  </p>
-                <img src="" alt="" />
-        `
+        //         <h4>Resin Code 7 </h4>
+        //         <p><strong>OTHER OR O (Other Plastics) </strong> Other or O usually fall into RIN code 1 to 6 groups. Their properties depend upon the resin combination. Because of this, some can be recycled while others may not. It is used in Acrylic, Nylon, Polycarbonate, and polylactic acid (a bioplastic), and Multilayer combination of different plastics.  </p>
+        //         <img src="" alt="" />
+        // `
     },
     {
         title: '<h3><strong>Myths of </strong> Plastics </h3>',
@@ -217,10 +270,10 @@ const AboutPlastics = () => {
                 }
             })   
         })
+
+        
+
     })
-
-    
-
 
     
 
@@ -231,10 +284,6 @@ const AboutPlastics = () => {
             subtitle="Plastic"
             title="<h3>Introduction of <strong>Plastics</strong> </h3>"
         />
-
-     
-      
-
 
         <section className="plastic_intro">
             
