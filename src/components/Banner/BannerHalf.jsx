@@ -2,7 +2,6 @@ import React from 'react'
 import './banner.scss'
 
 const BannerHalf = ({image, subtitle, title}) => {
-    console.log(image)
 
   return (
     <section className='banner banner_half' style={{background: image }}>

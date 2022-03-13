@@ -41,7 +41,15 @@ const Header = () => {
                         </div>
                       </div>
                     </li>
-                    <li><NavLink  to='/problems'>solution</NavLink> </li>
+                    <li className='has_dropdown'>
+                      <a href="#">solutions</a>
+                        <div className="sub_menu">
+                          <div className="sm_wrap">
+                            <NavLink  to='/s'>Policy Level Interventions</NavLink>
+                            <NavLink  to='/regional_problems'>Local Level Solutions</NavLink>
+                          </div>
+                        </div>
+                    </li>
                     <li><NavLink  to='/updates'>updates</NavLink> </li>
                     {/* <li><NavLink activeClassName="active_class" to='/faq'>faqs</NavLink></li>
                     <li><NavLink activeClassName="active_class" to='/world_without_waste_vision'>World without waste vision</NavLink></li>

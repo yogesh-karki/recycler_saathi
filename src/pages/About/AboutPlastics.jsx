@@ -2,8 +2,10 @@ import React,{useEffect, useRef} from 'react'
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import BannerHalf from '../../components/Banner/BannerHalf'
+import TimelineImage from './TimelineImage';
 
 gsap.registerPlugin(ScrollTrigger); 
+
 
 
 const PlasticClassification = () => {
@@ -153,20 +155,21 @@ const introData = [
     {
         title: '<h3><strong>Development of</strong> Plastics </h3>',
         subtitle: 'A brief timeline ',
-        content: ` <h4>Invention of the Precursors </h4>
-                    <p><strong>1839 - 1856</strong>Natural Rubber, Vulcanite, Gutta- Percha, Shellac, and Bois Durci.   </p> 
+        contentDifferent: <TimelineImage />
+        // content: ` <h4>Invention of the Precursors </h4>
+        //             <p><strong>1839 - 1856</strong>Natural Rubber, Vulcanite, Gutta- Percha, Shellac, and Bois Durci.   </p> 
                     
-                    <h4>Beginning of the Plastic Era with Semi-Synthetics </h4>
-                    <p><strong>1839 - 1894</strong>Polystyrene or PS, Parkesine, Cellulose Nitrate or Celluloid, Polyvinyl Chloride or PVC, Viscose Rayon. </p>
+        //             <h4>Beginning of the Plastic Era with Semi-Synthetics </h4>
+        //             <p><strong>1839 - 1894</strong>Polystyrene or PS, Parkesine, Cellulose Nitrate or Celluloid, Polyvinyl Chloride or PVC, Viscose Rayon. </p>
                     
-                    <h4>Thermosetting Plastics and Thermoplastics </h4>
-                    <p><strong>1908-1939</strong>Cellophane, Phenol-Formaldehyde (trade name Bakelite), Vinyl or PVC, Ployvinylidene chloride or Saran, also called PVDC, Low-density polyethylene or LDPE, Acrylic or Polymethyl Methacrylate, Polyurethanes (trade name Igamid for plastic materials and Perlon for fibers), Polystyrene, Polytetrafluorethylene or PRFE (trade name Teflon), Nylon and Neoprene 	 </p> 
+        //             <h4>Thermosetting Plastics and Thermoplastics </h4>
+        //             <p><strong>1908-1939</strong>Cellophane, Phenol-Formaldehyde (trade name Bakelite), Vinyl or PVC, Ployvinylidene chloride or Saran, also called PVDC, Low-density polyethylene or LDPE, Acrylic or Polymethyl Methacrylate, Polyurethanes (trade name Igamid for plastic materials and Perlon for fibers), Polystyrene, Polytetrafluorethylene or PRFE (trade name Teflon), Nylon and Neoprene 	 </p> 
                     
-                    <h4>Polyethylene Terephthalate or Pet</h4>
-                    <p><strong>1941- 1985</strong>Polyethylene Terephthalate or Pet, Low-Density Polyethylene, Unsaturated Polyester PET, High-density polyethylene or HDPE (trade name Marlex), Polypropylene or PP, Saran Wrap, Styrofoam, Polyimide, Thermoplastic Polyester, Linear Low-Density Polyethylene, Liquid Crystal Polymers  </p>
+        //             <h4>Polyethylene Terephthalate or Pet</h4>
+        //             <p><strong>1941- 1985</strong>Polyethylene Terephthalate or Pet, Low-Density Polyethylene, Unsaturated Polyester PET, High-density polyethylene or HDPE (trade name Marlex), Polypropylene or PP, Saran Wrap, Styrofoam, Polyimide, Thermoplastic Polyester, Linear Low-Density Polyethylene, Liquid Crystal Polymers  </p>
                     
 
-        ` ,
+        // ` ,
 
     },
     {

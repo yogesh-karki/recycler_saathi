@@ -49,7 +49,7 @@ const dataStyle = {
     id: "dataStyle",
     type: "circle",
     paint: {
-        "circle-radius": 10,
+        "circle-radius": 8,
         "circle-stroke-width": 2,
         "circle-color": [
             "match",
@@ -97,7 +97,7 @@ const mapStyleLine = {
     paint: {
         "line-color": "#0a405a",
         "line-width": 1.5,
-        "line-dasharray": [2, 1],
+        // "line-dasharray": [2, 1],
     },
 };
 
