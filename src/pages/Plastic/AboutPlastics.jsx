@@ -4,6 +4,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import BannerHalf from '../../components/Banner/BannerHalf'
 import TimelineImage from './TimelineImage';
 
+
+import './plastic.scss'
 gsap.registerPlugin(ScrollTrigger); 
 
 
@@ -263,7 +265,7 @@ const AboutPlastics = () => {
     useEffect(() => {
         headerRefs.current.forEach((el, index) => {
             const head = el.querySelector('.head')
-    
+            ScrollTrigger.refresh();
             gsap.to(head, {
                 scrollTrigger: {
                     trigger: el,

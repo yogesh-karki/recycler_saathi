@@ -1,5 +1,6 @@
 import React from 'react'
 
+import './plastic.scss'
 const TimelineImage = () => {
 	const tlData = [
 		{

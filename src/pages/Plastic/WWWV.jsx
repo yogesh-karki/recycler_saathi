@@ -1,6 +1,8 @@
 import React from 'react'
 import BannerHalf from '../../components/Banner/BannerHalf'
 
+import './plastic.scss'
+
 const WWWV = () => {
   return (
     <>

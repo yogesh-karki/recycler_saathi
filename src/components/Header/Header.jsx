@@ -45,8 +45,8 @@ const Header = () => {
                       <a href="#">solutions</a>
                         <div className="sub_menu">
                           <div className="sm_wrap">
-                            <NavLink  to='/s'>Policy Level Interventions</NavLink>
-                            <NavLink  to='/regional_problems'>Local Level Solutions</NavLink>
+                            <NavLink  to='/policy_level_interventions'>Policy Level Interventions</NavLink>
+                            <NavLink  to='/local_level_interventions'>Local Level Interventions</NavLink>
                           </div>
                         </div>
                     </li>

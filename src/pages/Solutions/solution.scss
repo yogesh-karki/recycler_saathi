@@ -1,0 +1,171 @@
+.pl_solution {
+    .pls_card {
+        padding: 80px 0;
+
+        &:nth-child(odd) {
+            background: #01283c;
+
+            color: #fff;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            color: #10b5c9;
+            margin-bottom: 25px;
+            max-width: 490px;
+        
+        }
+    }
+}
+
+.local_solution {
+    .sol_card {
+        background: #01283c;
+
+        &:nth-child(even) {
+            background: #fff;
+
+            .testimonial .item .img {
+                img {
+                    border: 1px solid #003755;
+                }   
+
+                h5 {
+                    color: #003755;
+                }
+            }
+
+
+
+            .card_wrap {
+                color: #003755;
+
+                .head {
+                    h6 {
+                        color: #003755;
+                    }
+
+                    h3 {
+                        color: #003755;
+                    }
+                }
+
+                .content {
+                    h4 {
+                        color: #003755;
+                    }
+
+                    p {
+                        strong {
+                            font-family: "Proxima Nova Lt";
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .card_wrap {
+            padding: 100px 0;
+            display: flex;
+            flex-wrap: wrap;
+            color: #f3f3f3;
+            overflow: hidden;
+
+            
+
+            .head {
+                width: 30%;
+
+                h3 {
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    color: #10b5c9;
+                
+                }
+
+            
+            }
+
+            .content {
+                width: 70%;
+
+                p {
+                    margin-bottom: 25px;
+
+                    strong {
+                        font-size: 32px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonial {
+    margin-top: 50px;
+    
+
+    .testimonial_slides{
+        padding-bottom: 40px;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 0;
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: #10b3c7;
+
+            &.swiper-pagination-bullet-active {
+                background: #10b3c7;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+
+    .item {
+
+
+        .img {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid #10b5c9;
+            }
+
+            h5 {
+                color: #10b5c9;
+                text-transform: uppercase;
+                font-size: 24px;
+                line-height: 1.3;
+                margin-bottom: 10px;
+                max-width: 290px;
+                margin-left: 20px;
+            }
+        }
+
+        .test_text {
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+            width: 80%;
+            // padding-left: 170px;
+            
+        }
+    }
+
+}

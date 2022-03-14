@@ -11,12 +11,14 @@ import Team from './pages/Team/Team';
 import { News } from './pages/News/News';
 import NewsDetail from './pages/News/NewsDetail';
 import Portal from './pages/Portal/Portal';
-import AboutPlastics from './pages/About/AboutPlastics';
-import PlasticIndustry from './pages/About/PlasticIndustry';
-import WWWV from './pages/About/WWWV';
+import AboutPlastics from './pages/Plastic/AboutPlastics';
+import PlasticIndustry from './pages/Plastic/PlasticIndustry';
+import WWWV from './pages/Plastic/WWWV';
 import GlobalProblems from './pages/Problems/GlobalProblems';
 import RegionalProblems from './pages/Problems/RegionalProblems';
 import NationalProblems from './pages/Problems/NationalProblems';
+import LocalLevel from './pages/Solutions/LocalLevel';
+import PolicyLevel from './pages/Solutions/PolicyLevel';
 
 const Layout = () => {
 
@@ -38,6 +40,8 @@ const Layout = () => {
             <Route path='/global_problems' element={<GlobalProblems/> } />
             <Route path='/regional_problems' element={<RegionalProblems/> } />
             <Route path='/national_problems' element={<NationalProblems/> } />
+            <Route path='/local_level_interventions' element={<LocalLevel/> } />
+            <Route path='/policy_level_interventions' element={<PolicyLevel/> } />
 
          
           </Routes>

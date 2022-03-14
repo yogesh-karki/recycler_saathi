@@ -2,6 +2,7 @@ import React from "react";
 import BannerHalf from "../../components/Banner/BannerHalf";
 import ProblemAccordian from "./ProblemAccordian";
 
+import './Problems.scss'
 
 
 
