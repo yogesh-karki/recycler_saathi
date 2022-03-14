@@ -79,7 +79,7 @@ const About = () => {
                         </div>
 
                         <div className="img">
-                            <Swiper effect={"cards"} grabCursor={true} modules={[EffectCards]} className="mySwiper">
+                            <Swiper effect={"cards"}  grabCursor={true} modules={[EffectCards]} className="mySwiper">
                                 <SwiperSlide>
                                     <img src="./images/abt-image.jpg" alt="" />
                                 </SwiperSlide>

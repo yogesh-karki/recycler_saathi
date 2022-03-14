@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Programs from './pages/About/Programs';
+import ProgramDetail from './pages/About/ProgramDetail';
 import PlasticRecycling from './pages/PlasticRecycling/PlasticRecycling';
 import { Faq } from './pages/FAQ/Faq';
 import Team from './pages/Team/Team';
@@ -31,6 +32,7 @@ const Layout = () => {
             <Route path='/' element={<Home  />} />
             <Route path='/about' element={<About  />} />
             <Route path='/programs' element={<Programs  />} />
+            <Route path='/programDetail' element={<ProgramDetail/> } />
             <Route path='/about_plastics' element={<AboutPlastics />} />
             <Route path='/plastic_recycling' element={<PlasticRecycling/> } />
             <Route path='/plastic_industry' element={<PlasticIndustry/> } />

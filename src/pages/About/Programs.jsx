@@ -1,9 +1,14 @@
 import React from 'react'
+
+import {  NavLink } from 'react-router-dom';
+
 import BannerHalf from '../../components/Banner/BannerHalf'
 import './about.scss'
 
-const Programs = () => {
+import ProgramData from './ProgramData'
 
+const Programs = () => {
+    console.log(ProgramData)
 
     return (
         <>
@@ -13,6 +18,34 @@ const Programs = () => {
                 title="<h3><strong>Our Programs</strong> </h3>" 
 
             />
+
+            <section className="programs">
+                <div className="container">
+                    {
+                        ProgramData.map((program, index) => {
+                            return(
+                                <div className="pg_card" key={index}>
+                                    <NavLink className="news_wrap" 
+                                        to="/programDetail"
+                                        state={{ detail: program }}
+                                    >
+                                        <div className="img">
+                                            <img src={program.image} alt="" />
+                                        </div>
+
+                                        <div className="text">
+                                            <h3>{program.title}</h3>
+                                            <p>
+                                                {program.text}
+                                            </p>
+                                        </div>
+                                    </NavLink>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </section>
         </>
   )
 }

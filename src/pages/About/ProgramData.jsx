@@ -2,7 +2,7 @@ const ProgramData = [
     {
         title: "Waste Smart School",
         text: "Waste Smart School is an initiative to provide students and young children with environment friendly and environment conscious outlook. We ensure students receive exposure to and well-rounded knowledge about the waste management scenario and individual as well as community level practices for environmental protection.",
-        image: "./images/program_school.jpg",
+        image: "./images/programs/wss.jpg",
         description : [
             {
                 title: "The Challenge",
@@ -21,7 +21,7 @@ const ProgramData = [
     {
         title: "Waste Workers and Livelihood Enhancement",
         text: "As part of Recycler Saathi’s primary goal, we work for the welfare of waste workers to ensure their rights and safety.  By screening the needs of waste collectors and balers, we carefully plan and customize programs and events for the waste workers. As part of our intervention to ensure good health of our waste workers, we have organized health camps in the past years along with health awareness sessions. Further, to enhance the working efficiency of our balers, capacity building trainings for them have been organized frequently. ",
-        image: "",
+        image: "./images/programs/wwle.jpg",
         description : [
             {
                 title: "The Challenge",
@@ -52,7 +52,7 @@ const ProgramData = [
     {
         title: "PET Recovery Expansion and Collaboration  ",
         text: "Almost all plastic is non-biodegradable and thus builds-up in the environment such as in the Earth’s oceans causing damage to the aquatic ecosystem. Nepal needs an urgent alternative to collect plastics separately from other types of waste such as glasses, metals, and compostable solids to send for recycling. Recycler Saathi has already started the process of recollection and recycling of waste PET bottles and aims to recycle all plastic waste in Nepal.  ",
-        image: "",
+        image: "./images/programs/pet.jpg",
         description : [
             {
                 title: "The Challenge ",
@@ -85,7 +85,7 @@ const ProgramData = [
     {
         title: "Outreach and Advocacy  ",
         text: "Recycler Saathi empowers the local communities to participate and engage in meaningful environmental activities and projects. Through this, we also align our programs with the United Nations (UN) Sustainable Development Goals to introduce programs and events on various environment and sustainability issues.  ",
-        image: "",
+        image: "./images/programs/outreach.jpg",
         description : [
             {
                 title: "The Challenge ",
@@ -120,7 +120,7 @@ const ProgramData = [
     {
         title: "Green Infrastructure  ",
         text: "Green infrastructure reduces material and waste disposal costs and CO2 emissions. Recycled materials such as glass, paper, rubber, plastics, and wood has been used in all Recycler Saathi’s premises. We incorporate other aspects of eco-design such as collection of rain-water, plantation of trees and plants and composting. We believe that investing in green infrastructure is the best way to ensure future sustainability.  ",
-        image: "",
+        image: "./images/programs/green.jpg",
         description : [
             {
                 title: "The Challenge ",
@@ -137,3 +137,5 @@ const ProgramData = [
         ]
     },
 ]
+
+export default ProgramData
