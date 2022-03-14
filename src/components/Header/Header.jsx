@@ -50,7 +50,7 @@ const Header = () => {
                           </div>
                         </div>
                     </li>
-                    <li><NavLink  to='/updates'>updates</NavLink> </li>
+                    <li><NavLink  to='/news'>updates</NavLink> </li>
                     {/* <li><NavLink activeClassName="active_class" to='/faq'>faqs</NavLink></li>
                     <li><NavLink activeClassName="active_class" to='/world_without_waste_vision'>World without waste vision</NavLink></li>
                     <li><NavLink activeClassName="active_class" to='/team'>Team</NavLink></li>
@@ -64,7 +64,18 @@ const Header = () => {
             <div className="secondary">
               <nav>
                 <ul>
-                  <li><NavLink  to='about'>About Us</NavLink></li>
+                  <li className='has_dropdown'><a href="#">About Us</a>
+                    <div className="sub_menu">
+                      <div className="sm_wrap">
+                        <NavLink  to='/about'>About</NavLink>
+                        <NavLink  to='/team'>Team</NavLink>
+                        <NavLink  to='/programs'>Our Programs</NavLink>
+                        <NavLink  to='/programs'>Milestone</NavLink>
+                        <NavLink  to='/faq'>Faqs</NavLink>
+                        
+                      </div>
+                    </div>
+                  </li>
                   <li><NavLink  to='/updates'>careers</NavLink> </li>
                   <li><NavLink to='/portal' className='portal_btn'>Portal</NavLink></li>
                 </ul>

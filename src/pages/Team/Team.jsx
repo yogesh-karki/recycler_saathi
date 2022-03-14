@@ -1,5 +1,6 @@
 import React from 'react'
-import Banner from '../../components/Banner/Banner'
+import BannerHalf from '../../components/Banner/BannerHalf'
+
 
 import './team.scss'
 
@@ -72,10 +73,11 @@ const Team = () => {
   return (
     <>
 
-        <Banner 
-            colorTheme={'light'}
-            height={"smallHeight"}
-            title={'<h2><strong>OUR TEAM</strong> </h2>'}
+        <BannerHalf 
+            image="url(./images/team/team_banner.jpg)" 
+            // subtitle="About Us" 
+            // title="<h3><strong>our team</strong> </h3>" 
+
         />
 
         <section className="team">
