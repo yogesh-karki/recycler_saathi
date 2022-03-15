@@ -1,6 +1,8 @@
 footer {
     padding: 80px 0 20px;
     background: #003755;
+    position: relative;
+    z-index: 2;
 
     .logo_support {
         display: flex;

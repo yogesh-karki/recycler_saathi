@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Programs from './pages/About/Programs';
 import ProgramDetail from './pages/About/ProgramDetail';
+import Milestone from './pages/About/Milestone';
 import PlasticRecycling from './pages/PlasticRecycling/PlasticRecycling';
 import { Faq } from './pages/FAQ/Faq';
 import Team from './pages/Team/Team';
@@ -21,6 +22,7 @@ import RegionalProblems from './pages/Problems/RegionalProblems';
 import NationalProblems from './pages/Problems/NationalProblems';
 import LocalLevel from './pages/Solutions/LocalLevel';
 import PolicyLevel from './pages/Solutions/PolicyLevel';
+import MilestoneDetail from './pages/About/MilestoneDetail';
 
 const Layout = () => {
 
@@ -34,6 +36,8 @@ const Layout = () => {
             <Route path='/programs' element={<Programs  />} />
             <Route path='/programDetail' element={<ProgramDetail/> } />
             <Route path='/about_plastics' element={<AboutPlastics />} />
+            <Route path='/milestones' element={<Milestone />} />
+            <Route path='/milestone-detail' element={<MilestoneDetail />} />
             <Route path='/plastic_recycling' element={<PlasticRecycling/> } />
             <Route path='/plastic_industry' element={<PlasticIndustry/> } />
             <Route path='/world_without_waste_vision' element={<WWWV/> } />
@@ -47,7 +51,7 @@ const Layout = () => {
             <Route path='/national_problems' element={<NationalProblems/> } />
             <Route path='/local_level_interventions' element={<LocalLevel/> } />
             <Route path='/policy_level_interventions' element={<PolicyLevel/> } />
-
+            
          
           </Routes>
 

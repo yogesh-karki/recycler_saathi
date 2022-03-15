@@ -77,16 +77,22 @@
         background: linear-gradient(0deg, #01283c 0%, rgba(255, 255, 255, 0) 50%);
     }
 
+    &::before {
+        background: linear-gradient(90deg, #01283c 0%, rgba(255, 255, 255, 0) 50%);
+        
+    }
+
     .text {
         top: auto;
         bottom: 20%;
         max-width: 470px;
 
-        h3 {
+        h3, article {
             color: #fff;
             font-family: "Proxima Nova Rg";
             text-transform: uppercase;
             font-size: 56px;
+            line-height: 1.1;
 
             strong {
                 font-family: "Proxima Nova Lt";

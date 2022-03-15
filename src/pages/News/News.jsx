@@ -5,6 +5,7 @@ import './news.scss'
 
 import Banner from '../../components/Banner/Banner';
 import NewsData from './NewsData';
+import BannerHalf from '../../components/Banner/BannerHalf';
 
 const data = NewsData
 
@@ -13,11 +14,11 @@ export const News = () => {
  
   return (
     <>
-        <Banner 
-            colorTheme={'light'}
-            height={"smallHeight"}
-            title={'<h2><strong>News</strong> </h2>'}
-         
+        <BannerHalf 
+            image="url(./images/cover.png)" 
+        
+            title="<h3><strong>Updates</strong> </h3>" 
+
         />
 
         <section className="news">
