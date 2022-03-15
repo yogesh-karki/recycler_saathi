@@ -5,6 +5,7 @@ import MilestoneData from './MilestoneData'
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTop from '../../components/ScrollTop'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,69 +42,73 @@ const Milestone = () => {
     }
 
     return (
-        <section className="milestone">
-            <figure className='milestone_figure'>
-                <img src={activeData.image} alt="" />
-            </figure>
+        <>
+            <ScrollTop />
 
-            <div className="milestone_content">
-                <div className="container">
-                    <div className="milestone_wrap">
-                        <div className="milestone_scroller">
-                            <div className="milestone_head">
-                                <h3>Milestones</h3>
-                                <p>By systematically eliminating technical risks through rapid iterations, we aim to reach full-scale deployment in both rivers and oceans. Our ultimate goal is to clean up 90% of the world’s floating ocean plastic by 2040.</p>
+            <section className="milestone">
+                <figure className='milestone_figure'>
+                    <img src={activeData.image} alt="" />
+                </figure>
+
+                <div className="milestone_content">
+                    <div className="container">
+                        <div className="milestone_wrap">
+                            <div className="milestone_scroller">
+                                <div className="milestone_head">
+                                    <h3>Milestones</h3>
+                                    <p>By systematically eliminating technical risks through rapid iterations, we aim to reach full-scale deployment in both rivers and oceans. Our ultimate goal is to clean up 90% of the world’s floating ocean plastic by 2040.</p>
+                                </div>
+
+                                <div className="milestone_listing">
+                                    {
+                                        MilestoneData.map((val ,index) => {
+                                            return(
+                                                <div className="list_single " key={index}>
+                                                    
+                                                    <h4>{val.title}</h4>
+
+                                                    <ul>
+                                                        {
+                                                            val.presentation.map((list, index) => {
+                                                                return(
+                                                                    
+                                                                    <li key={index} className={`${activeData.title === list.title ? "active" : ""} `} onClick={ (e) => dataSetter (list, index)  }>
+                                                                        <p>{list.date}</p>
+                                                                        <h5>{list.title}</h5>
+                                                                    </li>
+                                                                )
+                                                            })
+                                                        }
+                                                    </ul>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+
+
+                            
                             </div>
 
-                            <div className="milestone_listing">
-                                {
-                                    MilestoneData.map((val ,index) => {
-                                        return(
-                                            <div className="list_single " key={index}>
-                                                
-                                                <h4>{val.title}</h4>
+                            <div className="milestone_sticky">
+                                <h3>
+                                    {activeData.title}
+                                </h3>
 
-                                                <ul>
-                                                    {
-                                                        val.presentation.map((list, index) => {
-                                                            return(
-                                                                
-                                                                <li key={index} className={`${activeData.title === list.title ? "active" : ""} `} onClick={ (e) => dataSetter (list, index)  }>
-                                                                    <p>{list.date}</p>
-                                                                    <h5>{list.title}</h5>
-                                                                </li>
-                                                            )
-                                                        })
-                                                    }
-                                                </ul>
-                                            </div>
-                                        )
-                                    })
-                                }
+                                <article dangerouslySetInnerHTML={{ __html: activeData.content }} ></article>
+
+                                <NavLink 
+                                    to="/milestone-detail"
+                                    state={{ detail: activeData.data }}
+                                >
+                                    Read More
+                                </NavLink>
                             </div>
-
-
-                        
-                        </div>
-
-                        <div className="milestone_sticky">
-                            <h3>
-                                {activeData.title}
-                            </h3>
-
-                            <article dangerouslySetInnerHTML={{ __html: activeData.content }} ></article>
-
-                            <NavLink 
-                                to="/milestone-detail"
-                                state={{ detail: activeData.data }}
-                            >
-                                Read More
-                            </NavLink>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
 

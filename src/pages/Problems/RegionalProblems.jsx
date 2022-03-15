@@ -1,13 +1,14 @@
 import React from "react";
 import BannerHalf from "../../components/Banner/BannerHalf";
 
+import ScrollTop from '../../components/ScrollTop'
 import ProblemAccordian from "./ProblemAccordian";
 import "./Problems.scss";
 
 const RegionalProblems = () => {
   const problemData = [
     {
-        image: "./images/global_problem1.jpg",
+        image: "./images/regional_problem/south asia plastic waste.jpg",
         title: "South Asia is the third-largest contributor to global plastic waste.",
         content: `
           <p>
@@ -16,7 +17,7 @@ const RegionalProblems = () => {
         `,
     },
     {
-        image: "./images/global_problem2.jpg",
+        image: "./images/regional_problem/plastic-south-asia.jpg",
         title: "South Asia’s transboundary rivers act as pathways for plastic pollution",
         content: `
           <p>   
@@ -25,7 +26,7 @@ const RegionalProblems = () => {
         `,
     },
     {
-        image: "./images/global_problem3.jpg",
+        image: "./images/regional_problem/exported-plastic-pollution.jpg",
         title: "Seventy-five percent of globally exported plastic waste ends up in Asia.   ",
         content: `
           <p>  
@@ -38,6 +39,8 @@ const RegionalProblems = () => {
 
     return (
         <>
+            <ScrollTop />
+
             <BannerHalf image="url(./images/regional_problem.jpg)" subtitle="Problems" title="<h3>Regional <strong>Problems</strong> </h3>" />
 
             <section className="problems">

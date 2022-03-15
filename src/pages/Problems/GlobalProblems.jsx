@@ -2,6 +2,8 @@ import React from "react";
 import BannerHalf from "../../components/Banner/BannerHalf";
 import ProblemAccordian from "./ProblemAccordian";
 
+import ScrollTop from '../../components/ScrollTop'
+
 import './Problems.scss'
 
 
@@ -9,7 +11,7 @@ import './Problems.scss'
 const GlobalProblems = () => {
   const problemData = [
     {
-        image: "./images/global_problem1.jpg",
+        image: "./images/harmful_chemicals.jpg",
         title: "Harmful chemicals can sometimes be associated with plastic",
         content: `
           <p>
@@ -49,7 +51,7 @@ const GlobalProblems = () => {
         `,
     },
     {
-        image: "./images/global_problem5.jpg",
+        image: "./images/microplastics.jpg",
         title: "Plastics break down into tiny microplastics",
         content: `
           <p>
@@ -76,6 +78,8 @@ const GlobalProblems = () => {
 
     return (
         <>
+          <ScrollTop />
+
             <BannerHalf image="url(./images/global_problem.jpg)" subtitle="Problems" title="<h3>Global <strong>Problems</strong> </h3>" />
 
             <section className="problems">

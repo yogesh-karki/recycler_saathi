@@ -9,6 +9,7 @@ import HomeNews from './HomeNews';
 
 import InstagramFeed from "react-ig-feed";
 import "react-ig-feed/dist/index.css";
+import BecomeRecycler from '../../components/Footer/BecomeRecycler';
 
 
 const Home = () => {
@@ -45,6 +46,8 @@ const Home = () => {
           counter="6"
         /> */}
       </div>
+
+      <BecomeRecycler />
     </>
   )
 }

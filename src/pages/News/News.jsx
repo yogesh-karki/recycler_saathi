@@ -7,6 +7,8 @@ import Banner from '../../components/Banner/Banner';
 import NewsData from './NewsData';
 import BannerHalf from '../../components/Banner/BannerHalf';
 
+import ScrollTop from '../../components/ScrollTop'
+
 const data = NewsData
 
 export const News = () => {
@@ -14,6 +16,9 @@ export const News = () => {
  
   return (
     <>
+
+        <ScrollTop />
+
         <BannerHalf 
             image="url(./images/cover.png)" 
         

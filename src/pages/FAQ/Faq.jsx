@@ -2,7 +2,7 @@ import React from 'react'
 
 import 'antd/dist/antd.css';
 import './faq.scss'
-
+import ScrollTop from '../../components/ScrollTop'
 import { Collapse } from 'antd';
 import BannerHalf from '../../components/Banner/BannerHalf';
 
@@ -43,8 +43,10 @@ const faqData = [
 export const Faq = () => {
   return (
     <>
+        <ScrollTop />
+
        <BannerHalf 
-            image="url(./images/team/team_banner.jpg)" 
+            image="url(./images/FAQs.jpg)" 
             subtitle="About Us" 
             title="<h3><strong>FAQ</strong>s </h3>" 
 

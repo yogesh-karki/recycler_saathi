@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.scss";
-
+import ScrollTop from '../../components/ScrollTop'
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -21,6 +21,7 @@ const About = () => {
 
     return (
         <>
+            <ScrollTop />
             <BannerHalf 
                 image="url(./images/cover.png)" 
                 subtitle="About Us" 

@@ -1,11 +1,13 @@
 import React from 'react'
 import BannerHalf from '../../components/Banner/BannerHalf'
-
+import ScrollTop from '../../components/ScrollTop'
 import './plastic.scss'
 
 const WWWV = () => {
   return (
     <>
+      <ScrollTop />
+
       <BannerHalf 
         image='url(./images/plastic_wwwv.jpg)'
         subtitle="The Coca-Cola Foundation"

@@ -1,6 +1,6 @@
 import React from 'react'
 import BannerHalf from '../../components/Banner/BannerHalf'
-
+import ScrollTop from '../../components/ScrollTop'
 
 import './team.scss'
 
@@ -72,6 +72,7 @@ const teamData = [
 const Team = () => {
   return (
     <>
+        <ScrollTop />
 
         <BannerHalf 
             image="url(./images/team/team_banner.jpg)" 

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ScrollTop from '../../components/ScrollTop'
 import {  NavLink } from 'react-router-dom';
 
 import BannerHalf from '../../components/Banner/BannerHalf'
@@ -12,8 +12,9 @@ const Programs = () => {
 
     return (
         <>
+            <ScrollTop />
             <BannerHalf 
-                image="url(./images/cover.png)" 
+                image="url(./images/programs_banner.jpg)" 
                 subtitle="About Us" 
                 title="<h3><strong>Our Programs</strong> </h3>" 
 

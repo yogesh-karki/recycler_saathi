@@ -3,6 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import BannerHalf from '../../components/Banner/BannerHalf'
 import TimelineImage from './TimelineImage';
+import ScrollTop from '../../components/ScrollTop'
 
 
 import './plastic.scss'
@@ -284,6 +285,8 @@ const AboutPlastics = () => {
 
   return (
     <>
+        <ScrollTop />
+
         <BannerHalf 
             image='url(./images/plastic_introduction.jpg)'
             subtitle="Plastic"

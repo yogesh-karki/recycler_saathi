@@ -3,6 +3,8 @@ import BannerHalf from '../../components/Banner/BannerHalf'
 
 import ProblemAccordian from "./ProblemAccordian";
 
+import ScrollTop from '../../components/ScrollTop'
+
 import './Problems.scss'
 
 const NationalProblems = () => {
@@ -55,6 +57,8 @@ const NationalProblems = () => {
 
   return (
     <>
+        <ScrollTop />
+
         <BannerHalf 
             image='url(./images/national_problem.jpg)'
             subtitle="Problems"

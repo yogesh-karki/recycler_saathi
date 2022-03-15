@@ -1,4 +1,5 @@
 import React from 'react'
+import {  NavLink } from 'react-router-dom';
 
 import './footer.scss'
 
@@ -13,28 +14,39 @@ const Footer = () => {
     return (
     <>
         <footer>
-            <div className="suscribe">
+            <div className="sitemap">
                 <div className="container">
                     <div className="wrap">
-                        <h3>Become a <strong>Saathi</strong></h3>
-                        <p> We are excited to help your bailing centers recycle more. To get started, sign up below and send us a picture of your nearest collector to win exciting prizes.</p>
-
-                        <div className="btn">
-                            <button>Sign Up</button>
+                        <div className="sm">
+                            <h4>Plastics</h4>
+                            <NavLink to= "/about_plastics">About Plastics</NavLink>
+                            <NavLink to= "/plastic_industry">Plastic Industry</NavLink>
+                            <NavLink to= "/world_without_waste_vision">World Without Waste Vision</NavLink>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div className="footer_top">
-                <div className="container">
-                    <div className="wrap">
-                        <h4>Follow our daily news</h4>
-                        <div className="social_icon">
-                            <a href="https://www.facebook.com/search/top?q=recycler%20saathi" target="_blank" ><FacebookOutlined /></a>
-                            <a href="https://www.instagram.com/recyclersaathi/ " target="_blank" ><InstagramOutlined /></a>
-                            <a href="https://twitter.com/creasionorg" target="_blank" ><TwitterOutlined /></a>
-                            <a href="https://www.linkedin.com/company/creasion/" target="_blank" ><LinkedinOutlined /></a>
+                        <div className="sm">
+                            <h4>Problems</h4>
+                            <NavLink to= "/global_problems">Global Problems</NavLink>
+                            <NavLink to= "/regional_problems">Regional Problems</NavLink>
+                            <NavLink to= "/national_problems">National Problems</NavLink>
+                        </div>
+
+                        
+
+                        <div className="sm">
+                            <h4>Recycler Saathi</h4>
+                            <NavLink to= "/about">About</NavLink>
+                            <NavLink to= "/portal">Portal</NavLink>
+                            <NavLink to= "/programs">Our Programs</NavLink>
+                            <NavLink to= "/milestones">Milestones</NavLink>
+                            <NavLink to= "/team">Team</NavLink>
+                        </div>
+
+                        <div className="sm">
+                            <h4>Join Us</h4>
+                            <NavLink to= "/">Bailing Partner</NavLink>
+                            <NavLink to= "/">Recycler Saathi</NavLink>
+                            <NavLink to= "/">Waste Smart School</NavLink>
                         </div>
                     </div>
                 </div>
@@ -45,7 +57,7 @@ const Footer = () => {
                     <div className="wrap">
                         <div className="logo_support">
                             <div className="img">
-                                <h4>An initiation of</h4>
+                                <h4>An initiative of</h4>
                                 <img src="./images/creasion.svg" alt="" />
                             </div>
 

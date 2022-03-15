@@ -2,6 +2,7 @@ import React from 'react'
 import './solution.scss'
 
 import BannerHalf from '../../components/Banner/BannerHalf'
+import ScrollTop from '../../components/ScrollTop'
 
 const plData = [
     {   
@@ -65,6 +66,8 @@ const plData = [
 const PolicyLevel = () => {
   return (
     <>
+        <ScrollTop />
+
         <BannerHalf 
             image='url(./images/national_problem.jpg)'
             subtitle="Solutions"

@@ -2,8 +2,10 @@ import React,{useEffect, useRef} from 'react'
 import './solution.scss'
 
 import BannerHalf from '../../components/Banner/BannerHalf'
+import ScrollTop from '../../components/ScrollTop'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { Pagination } from "swiper";
 
 import 'swiper/css';
@@ -223,6 +225,8 @@ const LocalLevel = () => {
 
   return (
     <>
+        <ScrollTop />
+
         <BannerHalf 
             image='url(./images/national_problem.jpg)'
             subtitle="Solutions"

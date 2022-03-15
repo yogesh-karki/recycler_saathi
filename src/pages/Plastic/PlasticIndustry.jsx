@@ -1,5 +1,6 @@
 import React from 'react'
 import BannerHalf from '../../components/Banner/BannerHalf'
+import ScrollTop from '../../components/ScrollTop'
 
 import './plastic.scss'
 
@@ -31,6 +32,8 @@ const PlasticIndustry = () => {
 
   return (
     <>
+      <ScrollTop />
+
       <BannerHalf 
         image='url(./images/plastic_indusrty.jpg)'
         subtitle="Plastic"

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Map from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import ScrollTop from '../../components/ScrollTop'
 
 import mapboxgl from "mapbox-gl";
 
@@ -20,6 +21,7 @@ import {navData, dataStyle, provinceLabelStyle ,mapStyleLine} from './PortalStyl
 
 
 import "./portal.scss";
+import DataCharts from "./DataCharts";
 
 // The following is required to stop "npm build" from transpiling mapbox code.
 // notice the exclamation point in the import.
@@ -157,6 +159,8 @@ const Portal = () => {
 
     return (
         <>
+            <ScrollTop />
+
             <div className="portal">
 
 
@@ -200,6 +204,10 @@ const Portal = () => {
           
                 </Map>
             </div>
+
+            {/* <section className="charts">
+                <DataCharts />
+            </section> */}
         </>
     );
 };
