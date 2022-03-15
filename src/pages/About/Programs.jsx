@@ -38,7 +38,13 @@ const Programs = () => {
                                             <p>
                                                 {program.text}
                                             </p>
+
+                                            <div className="read_more">
+                                                <h6>Read More</h6>
+                                            </div>
                                         </div>
+
+                                        
                                     </NavLink>
                                 </div>
                             )
