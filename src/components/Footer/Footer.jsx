@@ -44,9 +44,9 @@ const Footer = () => {
 
                         <div className="sm">
                             <h4>Join Us</h4>
-                            <NavLink to= "/">Bailing Partner</NavLink>
-                            <NavLink to= "/">Recycler Saathi</NavLink>
-                            <NavLink to= "/">Waste Smart School</NavLink>
+                            <NavLink to= "/bailing_partner">Bailing Partner</NavLink>
+                            <NavLink to= "/become_recycler_saathi">Recycler Saathi</NavLink>
+                            <NavLink to= "/become_waste_smart_school">Waste Smart School</NavLink>
                         </div>
                     </div>
                 </div>

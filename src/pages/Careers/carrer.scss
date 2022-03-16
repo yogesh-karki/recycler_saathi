@@ -1,0 +1,91 @@
+.form_wrapper {
+    padding: 100px 0;
+    background: #01283c;
+
+    .head {
+        text-align: center;
+        width: 570px;
+        max-width: 100%;
+        color: #fff;
+        margin: 0 auto 20px;      
+        h3 {
+            color: #10b5c9;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.form {
+    padding-top: 40px;
+
+    .submit_btn {
+        margin: 20px;
+
+        button {
+            background: #10b5c9;
+            border: 0;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 13px 20px;
+        }
+    }
+
+    .form_card {
+        margin: 20px;
+        color: #fff;
+
+        .ant-picker-focused {
+            padding: 0;
+            border-color: transparent;
+            box-shadow: none;
+        }
+
+        .ant-picker {
+            color: #fff;
+            padding: 0;
+            border: 0;
+            width: 100%;
+        }
+
+        .ant-picker-input {
+            background: #113a4f;
+            color: #fff;
+        }
+
+        .ant-picker-suffix {
+            margin-right: 10px;
+            color: #fff;
+        }
+
+        label {
+            color: #fff;
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            background: #113a4f;
+            padding: 10px;
+            border: 1px solid transparent;
+            color: #fff;
+
+            &:focus {
+                outline: none;
+                border: 1px solid #10b5c9;
+            }
+        }
+
+        textarea {
+            height: 150px;
+        }
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

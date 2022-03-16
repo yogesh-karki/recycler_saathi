@@ -23,6 +23,9 @@ import NationalProblems from './pages/Problems/NationalProblems';
 import LocalLevel from './pages/Solutions/LocalLevel';
 import PolicyLevel from './pages/Solutions/PolicyLevel';
 import MilestoneDetail from './pages/About/MilestoneDetail';
+import BecomeWss from './pages/Careers/BecomeWss';
+import BecomeRecyclerSaathi from './pages/Careers/BecomeRecyclerSaathi';
+import BailingPartner from './pages/Careers/BailingPartner';
 
 const Layout = () => {
 
@@ -51,6 +54,9 @@ const Layout = () => {
             <Route path='/national_problems' element={<NationalProblems/> } />
             <Route path='/local_level_interventions' element={<LocalLevel/> } />
             <Route path='/policy_level_interventions' element={<PolicyLevel/> } />
+            <Route path='/bailing_partner' element={<BailingPartner/> } />
+            <Route path='/become_recycler_saathi' element={<BecomeRecyclerSaathi/> } />
+            <Route path='/become_waste_smart_school' element={<BecomeWss/> } />
             
          
           </Routes>

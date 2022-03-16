@@ -1,5 +1,8 @@
 import React from 'react'
 import './footer.scss'
+import {  NavLink } from 'react-router-dom';
+
+
 
 import { RightOutlined } from '@ant-design/icons';
 const BecomeRecycler = () => {
@@ -16,7 +19,7 @@ const BecomeRecycler = () => {
                 <div className="wrap">
                     <div className="saathi">
                         <div className="img">
-                            <img src="./images/abt-image.jpg" alt="" />
+                            <img src="./images/become_saathi/bailing_partner.jpg" alt="" />
 
                         </div>
 
@@ -25,12 +28,13 @@ const BecomeRecycler = () => {
                             Are you operating a recollection and baling center? Or, are you thinking of establishing one? Then, please join us in becoming Recycler Saathi’s baling partner.
                         </p>
 
-                        <a href="">Send Request <RightOutlined /></a>
+                        <NavLink to= "/bailing_partner">Send Request <RightOutlined /></NavLink>
+                      
                     </div>
 
                     <div className="saathi">
                         <div className="img">
-                            <img src="./images/A6.5.1.jpg" alt="" />
+                            <img src="./images/become_saathi/Become_a_Recycler_Saathi.jpg" alt="" />
 
                         </div>
 
@@ -39,12 +43,14 @@ const BecomeRecycler = () => {
                         Do you somehow end up collecting a lot of PET bottles? If yes, then please bring your collection to our nearest recollection center to earn some quick cash and an appreciation certificate.      
                         </p>
 
-                        <a href="">Schedule an drop off  <RightOutlined /></a>
+                        <NavLink to= "/become_recycler_saathi">Schedule an drop off  <RightOutlined /></NavLink>
+                           
+                      
                     </div>
 
                     <div className="saathi">
                         <div className="img">
-                            <img src="./images/program_cycle_yatra.jpg" alt="" />
+                            <img src="./images/become_saathi/Waste_Smart_School.jpg" alt="" />
 
                         </div>
 
@@ -53,7 +59,8 @@ const BecomeRecycler = () => {
                             According to the World Bank report in 2018, it is estimated that 70% of global waste will increase by 2025 unless urgent action is taken. Therefore, this is the time to educate and engage students on an environmental issue that matters in the present and will matter ten years from now. Join us in becoming a Waste Smart School to mobilize youths of today for a better tomorrow.      
                         </p>
 
-                        <a href="">Join the Waste Smart Club  <RightOutlined /></a>
+                        <NavLink to= "/become_waste_smart_school">Join the Waste Smart Club  <RightOutlined /></NavLink>
+
                     </div>
 
                     
